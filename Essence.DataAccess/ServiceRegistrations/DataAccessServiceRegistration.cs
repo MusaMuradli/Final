@@ -1,0 +1,4 @@
+﻿namespace Essence.DataAccess.ServiceRegistrations
+{
+
+}

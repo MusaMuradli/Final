@@ -1,0 +1,12 @@
+C:\Users\Owner\Desktop\Essence\Essence.Business\bin\Debug\net8.0\Essence.Business.deps.json
+C:\Users\Owner\Desktop\Essence\Essence.Business\bin\Debug\net8.0\Essence.Business.dll
+C:\Users\Owner\Desktop\Essence\Essence.Business\bin\Debug\net8.0\Essence.Business.pdb
+C:\Users\Owner\Desktop\Essence\Essence.Business\obj\Debug\net8.0\Essence.Business.csproj.AssemblyReference.cache
+C:\Users\Owner\Desktop\Essence\Essence.Business\obj\Debug\net8.0\Essence.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Owner\Desktop\Essence\Essence.Business\obj\Debug\net8.0\Essence.Business.AssemblyInfoInputs.cache
+C:\Users\Owner\Desktop\Essence\Essence.Business\obj\Debug\net8.0\Essence.Business.AssemblyInfo.cs
+C:\Users\Owner\Desktop\Essence\Essence.Business\obj\Debug\net8.0\Essence.Business.csproj.CoreCompileInputs.cache
+C:\Users\Owner\Desktop\Essence\Essence.Business\obj\Debug\net8.0\Essence.Business.dll
+C:\Users\Owner\Desktop\Essence\Essence.Business\obj\Debug\net8.0\refint\Essence.Business.dll
+C:\Users\Owner\Desktop\Essence\Essence.Business\obj\Debug\net8.0\Essence.Business.pdb
+C:\Users\Owner\Desktop\Essence\Essence.Business\obj\Debug\net8.0\ref\Essence.Business.dll

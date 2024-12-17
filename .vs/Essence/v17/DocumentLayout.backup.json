@@ -1,0 +1,134 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Owner\\Desktop\\Essence\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DB7D7795-4365-4880-9220-1B9396207314}|Essence.DataAccess\\Essence.DataAccess.csproj|c:\\users\\owner\\desktop\\essence\\essence.dataaccess\\serviceregistrations\\dataaccessserviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB7D7795-4365-4880-9220-1B9396207314}|Essence.DataAccess\\Essence.DataAccess.csproj|solutionrelative:essence.dataaccess\\serviceregistrations\\dataaccessserviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB7D7795-4365-4880-9220-1B9396207314}|Essence.DataAccess\\Essence.DataAccess.csproj|c:\\users\\owner\\desktop\\essence\\essence.dataaccess\\contexts\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB7D7795-4365-4880-9220-1B9396207314}|Essence.DataAccess\\Essence.DataAccess.csproj|solutionrelative:essence.dataaccess\\contexts\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{104317CB-6FF3-47F2-BB9C-17BBFBA8CF7C}|Essence.Core\\Essence.Core.csproj|c:\\users\\owner\\desktop\\essence\\essence.core\\entities\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{104317CB-6FF3-47F2-BB9C-17BBFBA8CF7C}|Essence.Core\\Essence.Core.csproj|solutionrelative:essence.core\\entities\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB7D7795-4365-4880-9220-1B9396207314}|Essence.DataAccess\\Essence.DataAccess.csproj|c:\\users\\owner\\desktop\\essence\\essence.dataaccess\\essence.dataaccess.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{DB7D7795-4365-4880-9220-1B9396207314}|Essence.DataAccess\\Essence.DataAccess.csproj|solutionrelative:essence.dataaccess\\essence.dataaccess.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC98ECE7-97D3-4D88-9951-7E46C62F899A}|Essence.Presentation\\Essence.Presentation.csproj|c:\\users\\owner\\desktop\\essence\\essence.presentation\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DC98ECE7-97D3-4D88-9951-7E46C62F899A}|Essence.Presentation\\Essence.Presentation.csproj|solutionrelative:essence.presentation\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC98ECE7-97D3-4D88-9951-7E46C62F899A}|Essence.Presentation\\Essence.Presentation.csproj|c:\\users\\owner\\desktop\\essence\\essence.presentation\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC98ECE7-97D3-4D88-9951-7E46C62F899A}|Essence.Presentation\\Essence.Presentation.csproj|solutionrelative:essence.presentation\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AppUser.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\Essence\\Essence.Core\\Entities\\AppUser.cs",
+              "RelativeDocumentMoniker": "Essence.Core\\Entities\\AppUser.cs",
+              "ToolTip": "C:\\Users\\Owner\\Desktop\\Essence\\Essence.Core\\Entities\\AppUser.cs",
+              "RelativeToolTip": "Essence.Core\\Entities\\AppUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T15:04:06.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\Essence\\Essence.DataAccess\\Contexts\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Essence.DataAccess\\Contexts\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Owner\\Desktop\\Essence\\Essence.DataAccess\\Contexts\\AppDbContext.cs",
+              "RelativeToolTip": "Essence.DataAccess\\Contexts\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T15:03:16.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DataAccessServiceRegistration.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\Essence\\Essence.DataAccess\\ServiceRegistrations\\DataAccessServiceRegistration.cs",
+              "RelativeDocumentMoniker": "Essence.DataAccess\\ServiceRegistrations\\DataAccessServiceRegistration.cs",
+              "ToolTip": "C:\\Users\\Owner\\Desktop\\Essence\\Essence.DataAccess\\ServiceRegistrations\\DataAccessServiceRegistration.cs",
+              "RelativeToolTip": "Essence.DataAccess\\ServiceRegistrations\\DataAccessServiceRegistration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T15:02:21.2Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Essence.DataAccess",
+              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\Essence\\Essence.DataAccess\\Essence.DataAccess.csproj",
+              "RelativeDocumentMoniker": "Essence.DataAccess\\Essence.DataAccess.csproj",
+              "ToolTip": "C:\\Users\\Owner\\Desktop\\Essence\\Essence.DataAccess\\Essence.DataAccess.csproj",
+              "RelativeToolTip": "Essence.DataAccess\\Essence.DataAccess.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-12-16T15:00:25.875Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\Essence\\Essence.Presentation\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Essence.Presentation\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Owner\\Desktop\\Essence\\Essence.Presentation\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Essence.Presentation\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-16T14:33:45.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\Essence\\Essence.Presentation\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Essence.Presentation\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Owner\\Desktop\\Essence\\Essence.Presentation\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Essence.Presentation\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T14:33:00.197Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
