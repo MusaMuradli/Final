@@ -10,3 +10,4 @@ C:\Users\Owner\Desktop\Essence\Essence.Core\obj\Debug\net8.0\Essence.Core.dll
 C:\Users\Owner\Desktop\Essence\Essence.Core\obj\Debug\net8.0\refint\Essence.Core.dll
 C:\Users\Owner\Desktop\Essence\Essence.Core\obj\Debug\net8.0\Essence.Core.pdb
 C:\Users\Owner\Desktop\Essence\Essence.Core\obj\Debug\net8.0\ref\Essence.Core.dll
+C:\Users\Owner\Desktop\Essence\Essence.Core\obj\Debug\net8.0\Essence.Core.sourcelink.json
