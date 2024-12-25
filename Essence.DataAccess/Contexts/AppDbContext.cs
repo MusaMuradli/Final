@@ -9,4 +9,9 @@ public class AppDbContext: IdentityDbContext<AppUser>
     public AppDbContext(DbContextOptions<AppDbContext> dbContext) : base(dbContext)
     {
     }
+
+    public DbSet<Product> Products { get; set; }
+    public DbSet<ProductSize> ProductSizes { get; set; }
+    public DbSet<ProductImage> ProductImages { get; set; }
+
 }

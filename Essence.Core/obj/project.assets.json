@@ -821,11 +821,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Owner\\Desktop\\Essence\\Essence.Core\\Essence.Core.csproj",
+      "projectUniqueName": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Core\\Essence.Core.csproj",
       "projectName": "Essence.Core",
-      "projectPath": "C:\\Users\\Owner\\Desktop\\Essence\\Essence.Core\\Essence.Core.csproj",
+      "projectPath": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Core\\Essence.Core.csproj",
       "packagesPath": "C:\\Users\\Owner\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Owner\\Desktop\\Essence\\Essence.Core\\obj\\",
+      "outputPath": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

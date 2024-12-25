@@ -12,6 +12,8 @@ public class Product:BaseAuditableEntity
     public decimal Price { get; set; }
     public int Count { get; set; }
     public List<ProductImage> ProductImages { get; set; } = [];
-   
+    public List<ProductSize> ProductSizes { get; set; } = [];
+
+
 
 }
