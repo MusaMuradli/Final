@@ -23,3 +23,8 @@ C:\Users\Owner\Desktop\Final\Essence.Business\obj\Debug\net8.0\Essence.Business.
 C:\Users\Owner\Desktop\Final\Essence.Business\obj\Debug\net8.0\refint\Essence.Business.dll
 C:\Users\Owner\Desktop\Final\Essence.Business\obj\Debug\net8.0\Essence.Business.pdb
 C:\Users\Owner\Desktop\Final\Essence.Business\obj\Debug\net8.0\ref\Essence.Business.dll
+C:\Users\Owner\Desktop\Final\Essence.Business\bin\Debug\net8.0\Essence.Core.dll
+C:\Users\Owner\Desktop\Final\Essence.Business\bin\Debug\net8.0\Essence.DataAccess.dll
+C:\Users\Owner\Desktop\Final\Essence.Business\bin\Debug\net8.0\Essence.DataAccess.pdb
+C:\Users\Owner\Desktop\Final\Essence.Business\bin\Debug\net8.0\Essence.Core.pdb
+C:\Users\Owner\Desktop\Final\Essence.Business\obj\Debug\net8.0\Essence..ACED6949.Up2Date

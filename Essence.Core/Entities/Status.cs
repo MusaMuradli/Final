@@ -2,10 +2,9 @@
 
 namespace Essence.Core.Entities;
 
-public class Category:BaseAuditableEntity
+public class Status : BaseAuditableEntity
 {
-    public string? ImagePath { get; set; }
     public string Name { get; set; } = null!;
-
+    public List<Order> Orders { get; set; } = [];
 
 }

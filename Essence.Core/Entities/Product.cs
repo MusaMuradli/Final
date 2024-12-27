@@ -9,8 +9,9 @@ public class Product:BaseAuditableEntity
     public string Brand { get; set; } = null!;
     public string Description { get; set; } = null!;
     public string Title { get; set; } = null!;
-    public decimal Price { get; set; }
     public int Count { get; set; }
+    public int CategoryId { get; set; }
+    public Category Category { get; set; } = null!;
     public List<ProductImage> ProductImages { get; set; } = [];
     public List<ProductSize> ProductSizes { get; set; } = [];
 
