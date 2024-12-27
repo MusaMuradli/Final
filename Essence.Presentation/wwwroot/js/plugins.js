@@ -1,4 +1,30 @@
 // Avoid `console` errors in browsers that lack a console.
+
+
+
+$(document).ready(function () {
+    $(".category-slider").owlCarousel({
+        items: 1,              // Bir slaydda neçə element olacaq
+        loop: true,            // Döngü
+        margin: 10,            // Aralıq
+        nav: true,             // Nəzarət düymələri
+        dots: true,            // Nöqtələr
+        autoplay: true,        // Avtomatik keçid
+        autoplayTimeout: 3000, // Keçid müddəti
+        responsive: {
+            0: {
+                items: 1
+            },
+            768: {
+                items: 2
+            },
+            1024: {
+                items: 3
+            }
+        }
+    });
+});
+
 (function () {
     var method;
     var noop = function noop() {};

@@ -149,3 +149,25 @@
     });
 
 })(jQuery);
+$(document).ready(function () {
+    $(".category-slider").owlCarousel({
+        items: 3, // Eyni anda neç? kateqoriya göst?ril?c?k
+        loop: true, // T?krarlama
+        margin: 20, // Elementl?r aras?ndak? bo?luq
+        nav: true, // Navigasiya oxlar?
+        dots: true, // Göst?ricil?r
+        autoplay: true, // Avtomatik h?r?k?t
+        autoplayTimeout: 3000, // Avtomatik h?r?k?t interval?
+        responsive: {
+            0: {
+                items: 1
+            },
+            768: {
+                items: 2
+            },
+            1200: {
+                items: 3
+            }
+        }
+    });
+});

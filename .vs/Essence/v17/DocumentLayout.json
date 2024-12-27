@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Owner\\Desktop\\Final\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7F664D41-8BE6-4B61-B58A-B007F31090DA}|Essence.Business\\Essence.Business.csproj|c:\\users\\owner\\desktop\\final\\essence.business\\services\\implementations\\cloudinaryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F664D41-8BE6-4B61-B58A-B007F31090DA}|Essence.Business\\Essence.Business.csproj|solutionrelative:essence.business\\services\\implementations\\cloudinaryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{104317CB-6FF3-47F2-BB9C-17BBFBA8CF7C}|Essence.Core\\Essence.Core.csproj|c:\\users\\owner\\desktop\\final\\essence.core\\entities\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{104317CB-6FF3-47F2-BB9C-17BBFBA8CF7C}|Essence.Core\\Essence.Core.csproj|solutionrelative:essence.core\\entities\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7F664D41-8BE6-4B61-B58A-B007F31090DA}|Essence.Business\\Essence.Business.csproj|c:\\users\\owner\\desktop\\final\\essence.business\\services\\abstractions\\icloudinaryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F664D41-8BE6-4B61-B58A-B007F31090DA}|Essence.Business\\Essence.Business.csproj|solutionrelative:essence.business\\services\\abstractions\\icloudinaryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{104317CB-6FF3-47F2-BB9C-17BBFBA8CF7C}|Essence.Core\\Essence.Core.csproj|c:\\users\\owner\\desktop\\final\\essence.core\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{104317CB-6FF3-47F2-BB9C-17BBFBA8CF7C}|Essence.Core\\Essence.Core.csproj|solutionrelative:essence.core\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{104317CB-6FF3-47F2-BB9C-17BBFBA8CF7C}|Essence.Core\\Essence.Core.csproj|c:\\users\\owner\\desktop\\final\\essence.core\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{104317CB-6FF3-47F2-BB9C-17BBFBA8CF7C}|Essence.Core\\Essence.Core.csproj|solutionrelative:essence.core\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,8 +22,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Core\\Entities\\Order.cs",
+              "RelativeDocumentMoniker": "Essence.Core\\Entities\\Order.cs",
+              "ToolTip": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Core\\Entities\\Order.cs",
+              "RelativeToolTip": "Essence.Core\\Entities\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-27T06:41:57.714Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AppUser.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Core\\Entities\\AppUser.cs",
+              "RelativeDocumentMoniker": "Essence.Core\\Entities\\AppUser.cs",
+              "ToolTip": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Core\\Entities\\AppUser.cs",
+              "RelativeToolTip": "Essence.Core\\Entities\\AppUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-27T06:41:20.23Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
@@ -34,28 +64,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CloudinaryService.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Business\\Services\\Implementations\\CloudinaryService.cs",
-              "RelativeDocumentMoniker": "Essence.Business\\Services\\Implementations\\CloudinaryService.cs",
-              "ToolTip": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Business\\Services\\Implementations\\CloudinaryService.cs",
-              "RelativeToolTip": "Essence.Business\\Services\\Implementations\\CloudinaryService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA3AAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Core\\Entities\\Category.cs",
+              "RelativeDocumentMoniker": "Essence.Core\\Entities\\Category.cs",
+              "ToolTip": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Core\\Entities\\Category.cs",
+              "RelativeToolTip": "Essence.Core\\Entities\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T16:14:24.118Z",
+              "WhenOpened": "2024-12-27T06:37:42.832Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ICloudinaryService.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Business\\Services\\Abstractions\\ICloudinaryService.cs",
-              "RelativeDocumentMoniker": "Essence.Business\\Services\\Abstractions\\ICloudinaryService.cs",
-              "ToolTip": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Business\\Services\\Abstractions\\ICloudinaryService.cs",
-              "RelativeToolTip": "Essence.Business\\Services\\Abstractions\\ICloudinaryService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T16:14:23.358Z"
             }
           ]
         }

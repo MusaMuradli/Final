@@ -1752,3 +1752,7 @@ img {
 /* ##### The End ##### */
 
 /*# sourceMappingURL=core-style.css.map */
+.category-slider .single_catagory_area {
+    margin: 0 10px;
+    border: 1px solid #ebebeb;
+}
