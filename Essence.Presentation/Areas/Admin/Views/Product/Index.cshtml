@@ -1,0 +1,37 @@
+﻿
+<div class="col-12">
+    <div class="bg-secondary rounded h-100 p-4">
+        <a class="btn btn-primary" asp-controller="product" asp-action="create">Create</a>
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Image</th>
+                        <th scope="col">Brand</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                        <tr>
+                            <td></td>
+                            <td><img src="~/pustok/image/products/"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <a class="btn btn-primary" asp-controller="product" asp-action="details" asp-route-id="">Details</a>
+                                <a class="btn btn-warning" asp-controller="product" asp-action="update" asp-route-id="">Update</a>
+                                <a class="btn btn-danger" asp-controller="product" asp-action="delete" asp-route-id="">Delete</a>
+                            </td>
+                        </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

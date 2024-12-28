@@ -14752,7 +14752,7 @@ button.bg-primary:focus {
 }
 
 .bg-secondary {
-  background-color: #686868 !important;
+    background-color: #487b5a !important;
 }
 
 a.bg-secondary:hover, a.bg-secondary:focus,
@@ -21891,3 +21891,31 @@ dl li {
 }
 
 /*# sourceMappingURL=maps/style.css.map */
+.row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+input[type="file"], input[type="text"], input[type="checkbox"] {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 14px;
+}
+
+button.btn-danger {
+    background-color: #dc3545;
+    border: none;
+    color: white;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+    button.btn-danger:hover {
+        background-color: #c82333;
+    }
+
+label {
+    font-weight: bold;
+}
