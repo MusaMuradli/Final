@@ -1,17 +1,27 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Essence.Business.Services.Abstractions;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Essence.Presentation.Areas.Admin.Controllers
 {
     [Area("Admin")]
     public class ProductController : Controller
     {
-        public IActionResult Index()
+        private readonly IProductService _service;
+
+        public ProductController(IProductService productService)
         {
-            return View();
+            _service = productService;
+        }
+
+        public async Task<IActionResult> Index()
+        {
+            var products =  _service.GetAll();
+            return View(products);
         }
 
         public async Task<IActionResult> Create()
         {
+
             return View();
         }
     }

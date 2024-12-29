@@ -502,3 +502,11 @@ C:\Users\Owner\Desktop\Final\Essence.Presentation\bin\Debug\net8.0\Essence.Core.
 C:\Users\Owner\Desktop\Final\Essence.Presentation\bin\Debug\net8.0\Essence.DataAccess.dll
 C:\Users\Owner\Desktop\Final\Essence.Presentation\bin\Debug\net8.0\Essence.Core.pdb
 C:\Users\Owner\Desktop\Final\Essence.Presentation\bin\Debug\net8.0\Essence.DataAccess.pdb
+C:\Users\Owner\Desktop\Final\Essence.Presentation\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\Owner\Desktop\Final\Essence.Presentation\bin\Debug\net8.0\CloudinaryDotNet.dll
+C:\Users\Owner\Desktop\Final\Essence.Presentation\bin\Debug\net8.0\FluentValidation.dll
+C:\Users\Owner\Desktop\Final\Essence.Presentation\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
+C:\Users\Owner\Desktop\Final\Essence.Presentation\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\Owner\Desktop\Final\Essence.Presentation\bin\Debug\net8.0\Essence.Business.dll
+C:\Users\Owner\Desktop\Final\Essence.Presentation\bin\Debug\net8.0\Essence.Business.pdb
+C:\Users\Owner\Desktop\Final\Essence.Presentation\obj\Debug\net8.0\Essence.Presentation.MvcApplicationPartsAssemblyInfo.cs

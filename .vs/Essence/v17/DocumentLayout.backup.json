@@ -3,24 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Owner\\Desktop\\Final\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DC98ECE7-97D3-4D88-9951-7E46C62F899A}|Essence.Presentation\\Essence.Presentation.csproj|c:\\users\\owner\\desktop\\final\\essence.presentation\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DC98ECE7-97D3-4D88-9951-7E46C62F899A}|Essence.Presentation\\Essence.Presentation.csproj|solutionrelative:essence.presentation\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DC98ECE7-97D3-4D88-9951-7E46C62F899A}|Essence.Presentation\\Essence.Presentation.csproj|c:\\users\\owner\\desktop\\final\\essence.presentation\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC98ECE7-97D3-4D88-9951-7E46C62F899A}|Essence.Presentation\\Essence.Presentation.csproj|solutionrelative:essence.presentation\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{104317CB-6FF3-47F2-BB9C-17BBFBA8CF7C}|Essence.Core\\Essence.Core.csproj|c:\\users\\owner\\desktop\\final\\essence.core\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{104317CB-6FF3-47F2-BB9C-17BBFBA8CF7C}|Essence.Core\\Essence.Core.csproj|solutionrelative:essence.core\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC98ECE7-97D3-4D88-9951-7E46C62F899A}|Essence.Presentation\\Essence.Presentation.csproj|c:\\users\\owner\\desktop\\final\\essence.presentation\\areas\\admin\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DC98ECE7-97D3-4D88-9951-7E46C62F899A}|Essence.Presentation\\Essence.Presentation.csproj|solutionrelative:essence.presentation\\areas\\admin\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F664D41-8BE6-4B61-B58A-B007F31090DA}|Essence.Business\\Essence.Business.csproj|c:\\users\\owner\\desktop\\final\\essence.business\\services\\abstractions\\generic\\igetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F664D41-8BE6-4B61-B58A-B007F31090DA}|Essence.Business\\Essence.Business.csproj|solutionrelative:essence.business\\services\\abstractions\\generic\\igetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F664D41-8BE6-4B61-B58A-B007F31090DA}|Essence.Business\\Essence.Business.csproj|c:\\users\\owner\\desktop\\final\\essence.business\\services\\implementations\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F664D41-8BE6-4B61-B58A-B007F31090DA}|Essence.Business\\Essence.Business.csproj|solutionrelative:essence.business\\services\\implementations\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7F664D41-8BE6-4B61-B58A-B007F31090DA}|Essence.Business\\Essence.Business.csproj|c:\\users\\owner\\desktop\\final\\essence.business\\services\\abstractions\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7F664D41-8BE6-4B61-B58A-B007F31090DA}|Essence.Business\\Essence.Business.csproj|solutionrelative:essence.business\\services\\abstractions\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7F664D41-8BE6-4B61-B58A-B007F31090DA}|Essence.Business\\Essence.Business.csproj|c:\\users\\owner\\desktop\\final\\essence.business\\dtos\\productdtos\\productcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F664D41-8BE6-4B61-B58A-B007F31090DA}|Essence.Business\\Essence.Business.csproj|solutionrelative:essence.business\\dtos\\productdtos\\productcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{104317CB-6FF3-47F2-BB9C-17BBFBA8CF7C}|Essence.Core\\Essence.Core.csproj|c:\\users\\owner\\desktop\\final\\essence.core\\entities\\brand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{104317CB-6FF3-47F2-BB9C-17BBFBA8CF7C}|Essence.Core\\Essence.Core.csproj|solutionrelative:essence.core\\entities\\brand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{104317CB-6FF3-47F2-BB9C-17BBFBA8CF7C}|Essence.Core\\Essence.Core.csproj|c:\\users\\owner\\desktop\\final\\essence.core\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{104317CB-6FF3-47F2-BB9C-17BBFBA8CF7C}|Essence.Core\\Essence.Core.csproj|solutionrelative:essence.core\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DC98ECE7-97D3-4D88-9951-7E46C62F899A}|Essence.Presentation\\Essence.Presentation.csproj|c:\\users\\owner\\desktop\\final\\essence.presentation\\areas\\admin\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DC98ECE7-97D3-4D88-9951-7E46C62F899A}|Essence.Presentation\\Essence.Presentation.csproj|solutionrelative:essence.presentation\\areas\\admin\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,8 +38,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IGetService.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Business\\Services\\Abstractions\\Generic\\IGetService.cs",
+              "RelativeDocumentMoniker": "Essence.Business\\Services\\Abstractions\\Generic\\IGetService.cs",
+              "ToolTip": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Business\\Services\\Abstractions\\Generic\\IGetService.cs",
+              "RelativeToolTip": "Essence.Business\\Services\\Abstractions\\Generic\\IGetService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-29T01:33:21.25Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
@@ -46,67 +67,80 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Presentation\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Essence.Presentation\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Presentation\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Essence.Presentation\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T13:28:05.803Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Brand.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Core\\Entities\\Brand.cs",
-              "RelativeDocumentMoniker": "Essence.Core\\Entities\\Brand.cs",
-              "ToolTip": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Core\\Entities\\Brand.cs",
-              "RelativeToolTip": "Essence.Core\\Entities\\Brand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T13:15:44.137Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ProductCreateDto.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Business\\Dtos\\ProductDtos\\ProductCreateDto.cs",
-              "RelativeDocumentMoniker": "Essence.Business\\Dtos\\ProductDtos\\ProductCreateDto.cs",
-              "ToolTip": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Business\\Dtos\\ProductDtos\\ProductCreateDto.cs",
-              "RelativeToolTip": "Essence.Business\\Dtos\\ProductDtos\\ProductCreateDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T13:11:44.399Z",
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Presentation\\Areas\\Admin\\Views\\Product\\Create.cshtml",
+              "RelativeDocumentMoniker": "Essence.Presentation\\Areas\\Admin\\Views\\Product\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Presentation\\Areas\\Admin\\Views\\Product\\Create.cshtml",
+              "RelativeToolTip": "Essence.Presentation\\Areas\\Admin\\Views\\Product\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-28T17:10:39.797Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "IProductService.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Business\\Services\\Abstractions\\IProductService.cs",
-              "RelativeDocumentMoniker": "Essence.Business\\Services\\Abstractions\\IProductService.cs",
-              "ToolTip": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Business\\Services\\Abstractions\\IProductService.cs",
-              "RelativeToolTip": "Essence.Business\\Services\\Abstractions\\IProductService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T13:10:02.401Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "Product.cs",
               "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Core\\Entities\\Product.cs",
               "RelativeDocumentMoniker": "Essence.Core\\Entities\\Product.cs",
               "ToolTip": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Core\\Entities\\Product.cs",
               "RelativeToolTip": "Essence.Core\\Entities\\Product.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T13:07:08.201Z",
+              "WhenOpened": "2024-12-28T17:10:08.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Presentation\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Essence.Presentation\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Presentation\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Essence.Presentation\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwBEAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T16:52:52.146Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Presentation\\Areas\\Admin\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "Essence.Presentation\\Areas\\Admin\\Views\\Product\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Presentation\\Areas\\Admin\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "Essence.Presentation\\Areas\\Admin\\Views\\Product\\Index.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACAAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-28T16:50:08.523Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Business\\Services\\Implementations\\ProductService.cs",
+              "RelativeDocumentMoniker": "Essence.Business\\Services\\Implementations\\ProductService.cs",
+              "ToolTip": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Business\\Services\\Implementations\\ProductService.cs",
+              "RelativeToolTip": "Essence.Business\\Services\\Implementations\\ProductService.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAmwEEAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T16:48:02.907Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IProductService.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Business\\Services\\Abstractions\\IProductService.cs",
+              "RelativeDocumentMoniker": "Essence.Business\\Services\\Abstractions\\IProductService.cs",
+              "ToolTip": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Business\\Services\\Abstractions\\IProductService.cs",
+              "RelativeToolTip": "Essence.Business\\Services\\Abstractions\\IProductService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T16:48:00.763Z",
               "EditorCaption": ""
             }
           ]

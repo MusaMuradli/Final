@@ -1,3 +1,4 @@
+using EduHome.Business.ServiceRegistrations;
 using Essence.DataAccess;
 namespace Essence.Presentation;
 public class Program
@@ -6,9 +7,8 @@ public class Program
     {
         var builder = WebApplication.CreateBuilder(args);
         builder.Services.AddDalServices(builder.Configuration);
-
-
         builder.Services.AddControllersWithViews();
+        builder.Services.AddBusinessServices();
 
         var app = builder.Build();
 

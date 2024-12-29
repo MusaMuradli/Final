@@ -1,4 +1,6 @@
-﻿using Essence.Core.Entities;
+﻿using Essence.Business.Services.Abstractions;
+using Essence.Business.Services.Implementations;
+using Essence.Core.Entities;
 using Essence.DataAccess.Contexts;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.DependencyInjection;
@@ -30,6 +32,7 @@ public static class BusinessServiceRegistration
 
     private static void AddServices(IServiceCollection services)
     {
+        services.AddScoped<IProductService, ProductService>();
 
     }
 }
