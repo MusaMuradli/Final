@@ -1,4 +1,5 @@
-﻿using Essence.Business.Services.Abstractions;
+﻿using Essence.Business.Dtos.ProductDtos;
+using Essence.Business.Services.Abstractions;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Essence.Presentation.Areas.Admin.Controllers
@@ -19,11 +20,30 @@ namespace Essence.Presentation.Areas.Admin.Controllers
             return View(products);
         }
 
+        [HttpGet]
         public async Task<IActionResult> Create()
         {
-
-            return View();
+            var brands = await _service.GetBrandsAsync(); // Brendləri ProductService vasitəsilə gətiririk
+            ViewData["Brands"] = brands; // UI-ya ötürürük
+            return View(new ProductCreateDto());
         }
+
+        [HttpPost]
+        public async Task<IActionResult> Create(ProductCreateDto dto)
+        {
+            var result = await _service.CreateAsync(dto, ModelState);
+
+            if (!result)
+            {
+                ViewData["Brands"] = await _service.GetBrandsAsync();
+                dto = await _service.GetCreatedDtoAsync(dto);
+                return View(dto);
+            }
+
+            return RedirectToAction(nameof(Index));
+        }
+
+
     }
 
 

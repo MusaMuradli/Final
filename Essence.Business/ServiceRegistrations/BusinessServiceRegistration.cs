@@ -33,6 +33,11 @@ public static class BusinessServiceRegistration
     private static void AddServices(IServiceCollection services)
     {
         services.AddScoped<IProductService, ProductService>();
+        services.AddScoped<ICloudinaryService, CloudinaryService>();
+        services.AddScoped<ICategoryService, CategoryService>();
+        services.AddScoped<IBrandService, BrandService>();
+
+
 
     }
 }

@@ -1,6 +1,8 @@
-﻿namespace Essence.Business.Dtos.ProductSizeDtos;
+﻿using Essence.Business.Abstractions.Dtos;
 
-public class ProductSizeCreateDto
+namespace Essence.Business.Dtos.ProductSizeDtos;
+
+public class ProductSizeCreateDto:IDto
 {
     public string Size { get; set; } = null!;
     public decimal Price { get; set; }
