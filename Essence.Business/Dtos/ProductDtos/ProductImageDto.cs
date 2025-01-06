@@ -8,4 +8,5 @@ public class ProductImageDto:IDto
     public string Path { get; set; } = null!;
     public bool IsHover { get; set; }
     public bool IsMain { get; set; }
+
 }

@@ -25,7 +25,7 @@
                         <tr>
                             <td>@product.Id</td>
                             <td>
-                                <img src="@product.ProductImages.FirstOrDefault()"
+                                <img src="@product.MainImagePath"
                                      alt="@product.Name"
                                      class="img-thumbnail"
                                      style="max-width: 100px; max-height: 100px;" />
@@ -33,7 +33,7 @@
                             <td>@product.Brand.Name</td>
                             <td>@product.Name</td>
                             <td>@product.Category.Name</td>
-                            <td>@product.Price.ToString("C")</td>
+                            <td>@product.Price</td>
                             <td>
                                 <a class="btn btn-primary btn-sm" asp-controller="Product" asp-action="Details" asp-route-id="@product.Id">Details</a>
                                 <a class="btn btn-warning btn-sm" asp-controller="Product" asp-action="Update" asp-route-id="@product.Id">Update</a>

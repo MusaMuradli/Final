@@ -1,4 +1,5 @@
 ﻿using Essence.Business.Dtos.BrandDtos;
+using Essence.Business.Dtos.CategoryDtos;
 using Essence.Business.Dtos.ProductDtos;
 using Essence.Business.Services.Abstractions.Generic;
 
@@ -10,6 +11,9 @@ public interface IProductService:IModifyService<ProductCreateDto, ProductUpdateD
     Task<ProductCreateDto> GetCreatedDtoAsync(ProductCreateDto dto);
     Task<ProductUpdateDto> GetUpdatedDtoAsync(ProductUpdateDto dto);
     Task<List<BrandGetDto>> GetBrandsAsync();
+    Task<List<CategoryGetDto>> GetCategoriesAsync();
+    Task<List<ProductGetDto>> GetProductsAsync();
+    Task<BrandAndCategoryDto> GetBrandAndCategoriesAsync();
     Task DeleteDtoAsync(int id);
 
 }

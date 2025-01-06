@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Essence.Business.Dtos.BrandDtos;
+using Essence.Business.Dtos.CategoryDtos;
 using Essence.Business.Dtos.ProductDtos;
 using Essence.Business.Extensions;
 using Essence.Business.Services.Abstractions;
@@ -17,6 +18,7 @@ namespace Essence.Business.Services.Implementations
         private readonly ICloudinaryService _cloudinaryService;
         private readonly ICategoryService _categoryService;
         private readonly IBrandService _brandService;
+
 
 
         public ProductService(IProductRepository productRepository, IMapper mapper, ICloudinaryService cloudinaryService, ICategoryService categoryService, IBrandService brandService)
@@ -81,7 +83,7 @@ namespace Essence.Business.Services.Implementations
 
             var product = _mapper.Map<Product>(dto);
 
-            product.ProductImages = [];
+            product.ProductImages = new List<ProductImage>();
 
             string mainImagePath = await _cloudinaryService.FileCreateAsync(dto.MainImage);
             ProductImage mainImage = new() { Path = mainImagePath, IsMain = true };
@@ -157,6 +159,30 @@ namespace Essence.Business.Services.Implementations
         public async Task<List<BrandGetDto>> GetBrandsAsync()
         {
             return await _brandService.GetBrandsAsync();
+        }
+
+        public async Task<List<CategoryGetDto>> GetCategoriesAsync()
+        {
+            return await _categoryService.GetAllCategories();
+        }
+
+        public async Task<BrandAndCategoryDto> GetBrandAndCategoriesAsync()
+        {
+            var brands = await _brandService.GetBrandsAsync();
+            var categories = await _categoryService.GetAllCategories();
+
+            var dto = new BrandAndCategoryDto
+            {
+                Brands = brands,
+                Categories = categories
+            };
+            return dto;
+
+        }
+
+        public Task<List<ProductGetDto>> GetProductsAsync()
+        {
+            throw new NotImplementedException();
         }
     }
 }

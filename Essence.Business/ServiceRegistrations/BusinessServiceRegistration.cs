@@ -1,4 +1,5 @@
-﻿using Essence.Business.Services.Abstractions;
+﻿using Essence.Business.AutoMappers;
+using Essence.Business.Services.Abstractions;
 using Essence.Business.Services.Implementations;
 using Essence.Core.Entities;
 using Essence.DataAccess.Contexts;

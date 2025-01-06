@@ -23,9 +23,8 @@ namespace Essence.Presentation.Areas.Admin.Controllers
         [HttpGet]
         public async Task<IActionResult> Create()
         {
-            var brands = await _service.GetBrandsAsync(); // Brendləri ProductService vasitəsilə gətiririk
-            ViewData["Brands"] = brands; // UI-ya ötürürük
-            return View(new ProductCreateDto());
+            var brandAndCategories = await _service.GetBrandAndCategoriesAsync();
+            return View(brandAndCategories);
         }
 
         [HttpPost]

@@ -12,6 +12,9 @@ public class ProductGetDto:IDto
     public string Title { get; set; } = null!;
     public decimal Price { get; set; }
     public int Count { get; set; }
+    public string MainImagePath { get; set; } = null!;
+    public List<string> ImagePaths { get; set; } = [];
+
     public Category Category { get; set; } = null!;
     public List<ProductImageDto> ProductImages { get; set; } = [];
     public List<ProductSize> ProductSizes { get; set; } = [];

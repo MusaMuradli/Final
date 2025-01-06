@@ -53,9 +53,10 @@ internal class BrandService : IBrandService
         throw new NotImplementedException();
     }
 
-    public Task<bool> IsExistAsync(int id)
+    public async Task<bool> IsExistAsync(int id)
     {
-        throw new NotImplementedException();
+       var brand = await _repository.IsExistAsync(x => x.Id == id);
+        return brand;
     }
 
     public Task<bool> UpdateAsync(BrandUpdateDto dto, ModelStateDictionary ModelState)

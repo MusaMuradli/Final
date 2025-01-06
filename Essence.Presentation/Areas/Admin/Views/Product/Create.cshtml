@@ -1,5 +1,6 @@
 ﻿@using Essence.Business.Dtos.BrandDtos
-
+@using Essence.Business.Dtos.ProductDtos
+@model BrandAndCategoryDto
 <div class="container mt-5">
     <h2 class="text-center mb-4">Create New Product</h2>
     <form asp-action="Create" asp-controller="Product" method="post" enctype="multipart/form-data">
@@ -8,13 +9,12 @@
             <label for="Name">Product Name</label>
             <input type="text" class="form-control" id="Name" name="Name" placeholder="Enter product name" required />
         </div>
-
+        <label for="Name">Brand Name</label>
         <select class="form-control" id="BrandId" name="BrandId" required>
             <option value="" disabled selected>Select a brand</option>
-            @if (ViewData["Brands"] != null)
+            @if (Model.Brands!=null)
             {
-                var brands = (List<BrandGetDto>)ViewData["Brands"];
-                foreach (var brand in brands)
+                foreach (var brand in Model.Brands)
                 {
                     <option value="@brand.Id">@brand.Name</option>
                 }
@@ -38,14 +38,32 @@
 
         <div class="form-group mb-3">
             <label for="CategoryId">Category</label>
-            <select class="form-control" id="CategoryId" name="CategoryId" required>
+
+              <select class="form-control" id="CategoryId" name="CategoryId" required>
                 <option value="" disabled selected>Select a category</option>
-                @* Dynamically populate categories *@
-               @*  @foreach (var category in ViewBag.Categories)
+              
+                @foreach (var category in Model.Categories)
                 {
                     <option value="@category.Id">@category.Name</option>
-                } *@
+                }
             </select>
+
+
+
+
+
+
+
+
+
+           @*  <select class="form-control" id="CategoryId" name="CategoryId" required>
+                <option value="" disabled selected>Select a category</option>
+              
+                @foreach (var category in ViewBag.Categories)
+                {
+                    <option value="@category.Id">@category.Name</option>
+                }
+            </select> *@
         </div>
 
         <!-- Product Sizes -->
