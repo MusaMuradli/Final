@@ -1,3 +1,4 @@
+using Essence.Business.Services.Abstractions;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -5,9 +6,17 @@ namespace Essence.Presentation.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
+        private readonly IProductService _productService;
+
+        public HomeController(IProductService productService)
         {
-            return View();
+            _productService = productService;
+        }
+
+        public async Task<IActionResult> Index()
+        {
+            var products = await _productService.GetProductsAsync();
+            return View(products);
         }
     }
 }

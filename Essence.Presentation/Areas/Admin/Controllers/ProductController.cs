@@ -16,7 +16,7 @@ namespace Essence.Presentation.Areas.Admin.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var products =  _service.GetAll();
+            var products = await _service.GetProductsAsync();
             return View(products);
         }
 
@@ -42,7 +42,18 @@ namespace Essence.Presentation.Areas.Admin.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        public async Task<IActionResult> Details(int id)
+        {
+            var product = await _service.GetAsync(id);
 
+            return View(product);
+        }
+        public async Task<IActionResult> Delete(int id)
+        {
+            await _service.DeleteAsync(id);
+
+            return RedirectToAction(nameof(Index));
+        }
     }
 
 

@@ -6,7 +6,7 @@ public class Program
     public static void Main(string[] args)
     {
         var builder = WebApplication.CreateBuilder(args);
-        builder.Services.AddDalServices(builder.Configuration);
+        builder.Services.AddDataAccessServices(builder.Configuration);
         builder.Services.AddControllersWithViews();
         builder.Services.AddBusinessServices();
 

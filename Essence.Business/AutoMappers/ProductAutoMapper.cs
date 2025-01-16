@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Http;
 
 namespace Essence.Business.AutoMappers;
 
-internal class ProductAutoMapper:Profile
+internal class ProductAutoMapper : Profile
 {
     public ProductAutoMapper()
     {
@@ -14,18 +14,30 @@ internal class ProductAutoMapper:Profile
         CreateMap<ProductImage, ProductImageDto>().ReverseMap();
         CreateMap<Product, ProductCreateDto>().ReverseMap();
         CreateMap<ProductCreateDto, Product>()
-           .ForMember(dest => dest.ProductImages, opt => opt.Ignore()) // Manual olaraq təyin ediləcək
+           .ForMember(dest => dest.ProductImages, opt => opt.Ignore()) 
            .ForMember(dest => dest.ProductSizes, opt => opt.MapFrom(src => src.ProductSizes));
 
-        // IFormFile -> ProductImage xəritəsi
+     
         CreateMap<IFormFile, ProductImage>()
-            .ForMember(dest => dest.Path, opt => opt.Ignore()) // Cloudinary ilə əl ilə yaradılacaq
-            .ForMember(dest => dest.IsMain, opt => opt.Ignore()) // Əl ilə təyin ediləcək
-            .ForMember(dest => dest.IsHover, opt => opt.Ignore()); // Əl ilə təyin ediləcək
+            .ForMember(dest => dest.Path, opt => opt.Ignore()) 
+            .ForMember(dest => dest.IsMain, opt => opt.Ignore()) 
+            .ForMember(dest => dest.IsHover, opt => opt.Ignore()); 
         CreateMap<ProductSizeCreateDto, ProductSize>();
+
         CreateMap<Product, ProductGetDto>()
-                      .ForMember(x => x.MainImagePath, x => x.MapFrom(src => src.ProductImages.FirstOrDefault(img => img.IsMain) != null ? src.ProductImages.FirstOrDefault(img => img.IsMain)!.Path : string.Empty))
-                      .ForMember(x => x.ImagePaths, x => x.MapFrom(src => src.ProductImages.Where(x => !x.IsMain).Select(x => x.Path)));
+    .ForMember(dest => dest.BrandName, opt => opt.MapFrom(src => src.Brand != null ? src.Brand.Name : "Məlumat yoxdur")) 
+    .ForMember(dest => dest.CategoryName, opt => opt.MapFrom(src => src.Category != null ? src.Category.Name : "Məlumat yoxdur"))
+             .ForMember(x => x.MainImagePath, x => x.MapFrom(src => src.ProductImages.FirstOrDefault(img => img.IsMain) != null ? src.ProductImages.FirstOrDefault(img => img.IsMain)!.Path : string.Empty))
+             .ForMember(dest => dest.Price, opt => opt.MapFrom(src => src.ProductSizes.Any() ? src.ProductSizes.First().Price : 0))
+             .ForMember(dest=>dest.CategoryName, opt=>opt.MapFrom(src=>src.Category.Name))
+             .ForMember(dest=>dest.BrandName, opt=>opt.MapFrom(src=>src.Brand.Name))
+             .ForMember(dest => dest.ImagePaths, opt => opt.MapFrom(src =>
+        src.ProductImages != null
+        ? src.ProductImages.Where(img => !img.IsMain).Select(img => img.Path).ToList()
+        : new List<string>()));
+
+        CreateMap<ProductSize, ProductSizeDto>();
+
 
 
     }

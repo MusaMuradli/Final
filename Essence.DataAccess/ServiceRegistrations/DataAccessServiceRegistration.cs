@@ -4,19 +4,19 @@ using Microsoft.EntityFrameworkCore;
 using Essence.DataAccess.Contexts;
 using Essence.DataAccess.Repositories.Abstractions;
 using Essence.DataAccess.Repositories.Implementations;
+using Essence.DataAccess.Interceptors;
 
 namespace Essence.DataAccess
 {
     public static class DataAccessLayerServiceRegistration
     {
-        public static IServiceCollection AddDalServices(this IServiceCollection services, IConfiguration configuration)
+        public static IServiceCollection AddDataAccessServices(this IServiceCollection services, IConfiguration configuration)
         {
-            
-            services.AddDbContext<AppDbContext>(options =>
-            {
-                options.UseSqlServer(configuration.GetConnectionString("Default"));
-            });
+            services.AddDbContext<AppDbContext>(options => options.UseSqlServer(configuration.GetConnectionString("Default")));
+
             _addRepositories(services);
+
+            services.AddSingleton<BaseEntityInterceptor>();
 
             return services;
         }

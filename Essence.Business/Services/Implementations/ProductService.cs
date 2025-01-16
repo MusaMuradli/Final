@@ -1,11 +1,14 @@
 ﻿using AutoMapper;
+using Essence.Business.Abstractions.Dtos;
 using Essence.Business.Dtos.BrandDtos;
 using Essence.Business.Dtos.CategoryDtos;
 using Essence.Business.Dtos.ProductDtos;
+using Essence.Business.Exceptions;
 using Essence.Business.Extensions;
 using Essence.Business.Services.Abstractions;
 using Essence.Core.Entities;
 using Essence.DataAccess.Repositories.Abstractions;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.EntityFrameworkCore;
 
@@ -108,9 +111,14 @@ namespace Essence.Business.Services.Implementations
 
 
 
-        public Task DeleteAsync(int id)
+        public async Task DeleteAsync(int id)
         {
-            throw new NotImplementedException();
+            var product = await _productRepository.GetAsync(id);
+            if (product == null)
+                throw new NotFoundException();
+            _productRepository.Delete(product);
+            await _productRepository.SaveChangesAsync();
+
         }
 
         public Task DeleteDtoAsync(int id)
@@ -119,9 +127,17 @@ namespace Essence.Business.Services.Implementations
         }
 
 
-        public Task<ProductGetDto> GetAsync(int id)
+        public async Task<ProductGetDto> GetAsync(int id)
         {
-            throw new NotImplementedException();
+            var product = await _productRepository.GetAsync(id, query =>
+      query.Include(p => p.Brand)
+           .Include(p => p.Category)
+           .Include(p => p.ProductImages));
+
+            if (product == null)
+                throw new NotFoundException();
+
+            return _mapper.Map<ProductGetDto>(product);
         }
 
         public Task<ProductCreateDto> GetCreatedDtoAsync()
@@ -180,9 +196,15 @@ namespace Essence.Business.Services.Implementations
 
         }
 
-        public Task<List<ProductGetDto>> GetProductsAsync()
+        public async Task<List<ProductGetDto>> GetProductsAsync()
         {
-            throw new NotImplementedException();
+            var products = _productRepository.GetAll().Include(x => x.ProductImages)
+                .Include(x => x.ProductSizes)
+                .Include(x => x.Brand)
+                .Include(x => x.Category);
+            var dto = _mapper.Map<List<ProductGetDto>>(products);
+            return dto;
+
         }
     }
 }

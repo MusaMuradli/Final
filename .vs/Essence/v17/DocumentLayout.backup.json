@@ -3,12 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Owner\\Desktop\\Final\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{DB7D7795-4365-4880-9220-1B9396207314}|Essence.DataAccess\\Essence.DataAccess.csproj|c:\\users\\owner\\desktop\\final\\essence.dataaccess\\contexts\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB7D7795-4365-4880-9220-1B9396207314}|Essence.DataAccess\\Essence.DataAccess.csproj|solutionrelative:essence.dataaccess\\contexts\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC98ECE7-97D3-4D88-9951-7E46C62F899A}|Essence.Presentation\\Essence.Presentation.csproj|c:\\users\\owner\\desktop\\final\\essence.presentation\\areas\\admin\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DC98ECE7-97D3-4D88-9951-7E46C62F899A}|Essence.Presentation\\Essence.Presentation.csproj|solutionrelative:essence.presentation\\areas\\admin\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC98ECE7-97D3-4D88-9951-7E46C62F899A}|Essence.Presentation\\Essence.Presentation.csproj|c:\\users\\owner\\desktop\\final\\essence.presentation\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC98ECE7-97D3-4D88-9951-7E46C62F899A}|Essence.Presentation\\Essence.Presentation.csproj|solutionrelative:essence.presentation\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC98ECE7-97D3-4D88-9951-7E46C62F899A}|Essence.Presentation\\Essence.Presentation.csproj|c:\\users\\owner\\desktop\\final\\essence.presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC98ECE7-97D3-4D88-9951-7E46C62F899A}|Essence.Presentation\\Essence.Presentation.csproj|solutionrelative:essence.presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB7D7795-4365-4880-9220-1B9396207314}|Essence.DataAccess\\Essence.DataAccess.csproj|c:\\users\\owner\\desktop\\final\\essence.dataaccess\\serviceregistrations\\dataaccessserviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB7D7795-4365-4880-9220-1B9396207314}|Essence.DataAccess\\Essence.DataAccess.csproj|solutionrelative:essence.dataaccess\\serviceregistrations\\dataaccessserviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7F664D41-8BE6-4B61-B58A-B007F31090DA}|Essence.Business\\Essence.Business.csproj|c:\\users\\owner\\desktop\\final\\essence.business\\services\\implementations\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7F664D41-8BE6-4B61-B58A-B007F31090DA}|Essence.Business\\Essence.Business.csproj|solutionrelative:essence.business\\services\\implementations\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{104317CB-6FF3-47F2-BB9C-17BBFBA8CF7C}|Essence.Core\\Essence.Core.csproj|c:\\users\\owner\\desktop\\final\\essence.core\\entities\\productsize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{104317CB-6FF3-47F2-BB9C-17BBFBA8CF7C}|Essence.Core\\Essence.Core.csproj|solutionrelative:essence.core\\entities\\productsize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DB7D7795-4365-4880-9220-1B9396207314}|Essence.DataAccess\\Essence.DataAccess.csproj|c:\\users\\owner\\desktop\\final\\essence.dataaccess\\interceptors\\baseentityinterceptor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB7D7795-4365-4880-9220-1B9396207314}|Essence.DataAccess\\Essence.DataAccess.csproj|solutionrelative:essence.dataaccess\\interceptors\\baseentityinterceptor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,28 +54,93 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ProductService.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Business\\Services\\Implementations\\ProductService.cs",
-              "RelativeDocumentMoniker": "Essence.Business\\Services\\Implementations\\ProductService.cs",
-              "ToolTip": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Business\\Services\\Implementations\\ProductService.cs",
-              "RelativeToolTip": "Essence.Business\\Services\\Implementations\\ProductService.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAAwDUAAAAgAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Presentation\\Program.cs",
+              "RelativeDocumentMoniker": "Essence.Presentation\\Program.cs",
+              "ToolTip": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Presentation\\Program.cs",
+              "RelativeToolTip": "Essence.Presentation\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T17:02:30.198Z",
+              "WhenOpened": "2025-01-16T15:06:29.14Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DataAccessServiceRegistration.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\Final\\Essence.DataAccess\\ServiceRegistrations\\DataAccessServiceRegistration.cs",
+              "RelativeDocumentMoniker": "Essence.DataAccess\\ServiceRegistrations\\DataAccessServiceRegistration.cs",
+              "ToolTip": "C:\\Users\\Owner\\Desktop\\Final\\Essence.DataAccess\\ServiceRegistrations\\DataAccessServiceRegistration.cs",
+              "RelativeToolTip": "Essence.DataAccess\\ServiceRegistrations\\DataAccessServiceRegistration.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAjwAwAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T14:50:09.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\Final\\Essence.DataAccess\\Contexts\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Essence.DataAccess\\Contexts\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Owner\\Desktop\\Final\\Essence.DataAccess\\Contexts\\AppDbContext.cs*",
+              "RelativeToolTip": "Essence.DataAccess\\Contexts\\AppDbContext.cs*",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAwBkAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T14:47:12.019Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Presentation\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Essence.Presentation\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Presentation\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Essence.Presentation\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T14:32:36.53Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ProductSize.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Core\\Entities\\ProductSize.cs",
-              "RelativeDocumentMoniker": "Essence.Core\\Entities\\ProductSize.cs",
-              "ToolTip": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Core\\Entities\\ProductSize.cs",
-              "RelativeToolTip": "Essence.Core\\Entities\\ProductSize.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Presentation\\Areas\\Admin\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "Essence.Presentation\\Areas\\Admin\\Views\\Product\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Presentation\\Areas\\Admin\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "Essence.Presentation\\Areas\\Admin\\Views\\Product\\Index.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAgwBgAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-16T14:32:27.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Business\\Services\\Implementations\\ProductService.cs",
+              "RelativeDocumentMoniker": "Essence.Business\\Services\\Implementations\\ProductService.cs",
+              "ToolTip": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Business\\Services\\Implementations\\ProductService.cs",
+              "RelativeToolTip": "Essence.Business\\Services\\Implementations\\ProductService.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAYwHoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T17:02:13.834Z",
+              "WhenOpened": "2025-01-16T12:51:22.177Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BaseEntityInterceptor.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\Final\\Essence.DataAccess\\Interceptors\\BaseEntityInterceptor.cs",
+              "RelativeDocumentMoniker": "Essence.DataAccess\\Interceptors\\BaseEntityInterceptor.cs",
+              "ToolTip": "C:\\Users\\Owner\\Desktop\\Final\\Essence.DataAccess\\Interceptors\\BaseEntityInterceptor.cs",
+              "RelativeToolTip": "Essence.DataAccess\\Interceptors\\BaseEntityInterceptor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T12:49:41.703Z",
               "EditorCaption": ""
             }
           ]
