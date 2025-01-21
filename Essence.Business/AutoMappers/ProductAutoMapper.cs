@@ -28,6 +28,7 @@ internal class ProductAutoMapper : Profile
     .ForMember(dest => dest.BrandName, opt => opt.MapFrom(src => src.Brand != null ? src.Brand.Name : "Məlumat yoxdur")) 
     .ForMember(dest => dest.CategoryName, opt => opt.MapFrom(src => src.Category != null ? src.Category.Name : "Məlumat yoxdur"))
              .ForMember(x => x.MainImagePath, x => x.MapFrom(src => src.ProductImages.FirstOrDefault(img => img.IsMain) != null ? src.ProductImages.FirstOrDefault(img => img.IsMain)!.Path : string.Empty))
+             .ForMember(x => x.HoverImagePath, x => x.MapFrom(src => src.ProductImages.FirstOrDefault(img => img.IsHover) != null ? src.ProductImages.FirstOrDefault(img => img.IsHover)!.Path : string.Empty))
              .ForMember(dest => dest.Price, opt => opt.MapFrom(src => src.ProductSizes.Any() ? src.ProductSizes.First().Price : 0))
              .ForMember(dest=>dest.CategoryName, opt=>opt.MapFrom(src=>src.Category.Name))
              .ForMember(dest=>dest.BrandName, opt=>opt.MapFrom(src=>src.Brand.Name))

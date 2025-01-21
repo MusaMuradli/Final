@@ -1,0 +1,87 @@
+﻿@using Essence.Business.Dtos.AppUserDtos
+@model LoginDto
+
+<!-- Main Start -->
+<main id="main" style="background-color: #f8f9fa; min-height: 100vh; display: flex; align-items: center; justify-content: center;">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card shadow-lg border-0">
+                    <div class="card-body p-5">
+                        <div class="text-center mb-4">
+                            <img src="~/img/" alt="Logo" class="img-fluid" style="max-width: 150px;">
+                        </div>
+                        <h4 class="text-center text-primary mb-3">@("Hello")</h4>
+                        <p class="text-center text-muted mb-4">@("LoginTitle")</p>
+                        <div class="text-danger text-center" asp-validation-summary="ModelOnly"></div>
+                        <form method="post">
+                            <div class="mb-3">
+                                <label for="username" class="form-label">@("UsernameOrEmail")</label>
+                                <input asp-for="EmailOrUsername" class="form-control" id="username" aria-describedby="emailHelp">
+                                <span class="text-danger" asp-validation-for="EmailOrUsername"></span>
+                            </div>
+                            <div class="mb-3 position-relative">
+                                <label for="password" class="form-label">@("Password")</label>
+                                <div class="input-group">
+                                    <input asp-for="Password" class="form-control" id="password" type="password">
+                                    <button type="button" class="btn btn-outline-secondary" id="togglePassword">
+                                        <i class="fa fa-eye" id="passwordIcon"></i>
+                                    </button>
+                                </div>
+                                <span class="text-danger" asp-validation-for="Password"></span>
+                            </div>
+                            <div class="text-center my-3">
+                                <a asp-action="ForgetPassword" asp-controller="Account" class="text-decoration-none">@("ForgotPassword")</a>
+                            </div>
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary">@("LoginButton")</button>
+                            </div>
+                            <div class="text-center mt-4">
+                                <small>@("DontHaveAccount") <a asp-action="Register" asp-controller="Account" class="text-primary">@("Register")</a></small>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<!-- Main End -->
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var togglePasswordButton = document.getElementById('togglePassword');
+        var passwordField = document.getElementById('password');
+        var passwordIcon = document.getElementById('passwordIcon');
+
+        togglePasswordButton.addEventListener('click', function () {
+            var isPasswordVisible = passwordField.type === 'text';
+
+            if (isPasswordVisible) {
+                passwordField.type = 'password';
+                passwordIcon.classList.remove('fa-eye-slash');
+                passwordIcon.classList.add('fa-eye');
+            } else {
+                passwordField.type = 'text';
+                passwordIcon.classList.remove('fa-eye');
+                passwordIcon.classList.add('fa-eye-slash');
+            }
+
+            $.ajax({
+                url: '/api/logAction',
+                type: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify({
+                    action: 'togglePasswordVisibility',
+                    isVisible: !isPasswordVisible
+                }),
+                success: function (response) {
+                    console.log('Password visibility toggled:', response);
+                },
+                error: function (xhr, status, error) {
+                    console.error('Error logging password visibility action:', error);
+                }
+            });
+        });
+    });
+</script>

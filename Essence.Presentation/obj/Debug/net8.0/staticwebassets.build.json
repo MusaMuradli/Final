@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "DgO9DLN/Ivl1P52PFMm3GlQGDphup6O91YWUaPkqN/k=",
+  "Hash": "BykXM9E+YQ97yzVrH7ir5gnRAOIGNbXHCX8Y3u7BlzI=",
   "Source": "Essence.Presentation",
   "BasePath": "_content/Essence.Presentation",
   "Mode": "Default",
@@ -2276,6 +2276,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Identity": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Presentation\\wwwroot\\img\\asiman\\asiman.jpeg",
+      "SourceId": "Essence.Presentation",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Presentation\\wwwroot\\",
+      "BasePath": "_content/Essence.Presentation",
+      "RelativePath": "img/asiman/asiman.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\asiman\\asiman.jpeg"
     },
     {
       "Identity": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Presentation\\wwwroot\\img\\bg-img\\bg-1.jpg",

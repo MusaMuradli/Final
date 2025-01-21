@@ -22,8 +22,6 @@ namespace Essence.Business.Services.Implementations
         private readonly ICategoryService _categoryService;
         private readonly IBrandService _brandService;
 
-
-
         public ProductService(IProductRepository productRepository, IMapper mapper, ICloudinaryService cloudinaryService, ICategoryService categoryService, IBrandService brandService)
         {
             _productRepository = productRepository;
@@ -32,7 +30,6 @@ namespace Essence.Business.Services.Implementations
             _categoryService = categoryService;
             _brandService = brandService;
         }
-
         public async Task<bool> CreateAsync(ProductCreateDto dto, ModelStateDictionary ModelState)
         {
             if (!ModelState.IsValid)
@@ -92,6 +89,10 @@ namespace Essence.Business.Services.Implementations
             ProductImage mainImage = new() { Path = mainImagePath, IsMain = true };
             product.ProductImages.Add(mainImage);
 
+
+            string hoverImagePath = await _cloudinaryService.FileCreateAsync(dto.Hover);
+            ProductImage hoverImage = new() { Path = hoverImagePath, IsHover = true };
+            product.ProductImages.Add(hoverImage);
             foreach (var file in dto.ProductImages)
             {
                 string imagePath = await _cloudinaryService.FileCreateAsync(file);
@@ -102,14 +103,6 @@ namespace Essence.Business.Services.Implementations
             await _productRepository.SaveChangesAsync();
             return true;
         }
-
-
-
-
-
-
-
-
 
         public async Task DeleteAsync(int id)
         {

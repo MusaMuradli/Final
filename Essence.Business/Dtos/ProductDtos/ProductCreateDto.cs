@@ -13,6 +13,7 @@ public class ProductCreateDto:IDto
     public int BrandId { get; set; }
     public int CategoryId { get; set; }
     public IFormFile MainImage { get; set; }=null!;
+    public IFormFile Hover { get; set; }=null!;
     public List<IFormFile> ProductImages { get; set; } = [];
     public List<ProductSizeCreateDto> ProductSizes { get; set; } = [];
     public List<ProductImageDto> Images { get; set; } = [];

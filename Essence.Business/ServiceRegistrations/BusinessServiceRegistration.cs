@@ -1,6 +1,8 @@
 ﻿using Essence.Business.AutoMappers;
 using Essence.Business.Services.Abstractions;
 using Essence.Business.Services.Implementations;
+using Essence.Business.UIServices.Abstractions;
+using Essence.Business.UIServices.Implementations;
 using Essence.Core.Entities;
 using Essence.DataAccess.Contexts;
 using Microsoft.AspNetCore.Identity;
@@ -15,19 +17,6 @@ public static class BusinessServiceRegistration
     {
         services.AddAutoMapper(Assembly.GetExecutingAssembly());
         AddServices(services);
-
-
-
-
-        services.AddIdentity<AppUser, IdentityRole>(options =>
-        {
-            options.Password.RequiredLength = 4;
-            options.Password.RequireNonAlphanumeric = false;
-            options.Password.RequireDigit = false;
-            options.Password.RequireUppercase = false;
-
-        }).AddDefaultTokenProviders().AddEntityFrameworkStores<AppDbContext>();
-
         return services;
     }
 
@@ -37,6 +26,10 @@ public static class BusinessServiceRegistration
         services.AddScoped<ICloudinaryService, CloudinaryService>();
         services.AddScoped<ICategoryService, CategoryService>();
         services.AddScoped<IBrandService, BrandService>();
+        services.AddScoped<IHomeService, HomeService>();
+        services.AddScoped<IAuthService, AuthService>();
+        services.AddScoped<IEmailService, EmailService>();
+        services.AddScoped<IHomeService, HomeService>();
 
 
 

@@ -23,7 +23,6 @@ public class AppDbContext: IdentityDbContext<AppUser>
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
-        //modelBuilder.AddSeedData();
         modelBuilder.Entity<Product>().HasQueryFilter(x => !x.IsDeleted);
 
         base.OnModelCreating(modelBuilder);

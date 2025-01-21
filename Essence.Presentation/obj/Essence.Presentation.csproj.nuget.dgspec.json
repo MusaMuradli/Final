@@ -69,6 +69,10 @@
             "FluentValidation.AspNetCore": {
               "target": "Package",
               "version": "[11.3.0, )"
+            },
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.8.0, )"
             }
           },
           "imports": [
@@ -213,6 +217,10 @@
           "targetAlias": "net8.0",
           "dependencies": {
             "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity": {
               "target": "Package",
               "version": "[2.2.0, )"
             },

@@ -367,7 +367,7 @@ img {
     text-align: center;
     border-left: 1px solid #ebebeb;
     height: 100%;
-    line-height: 80px; }
+    line-height: 46px; }
     @media only screen and (max-width: 767px) {
       .header_area .favourite-area a,
       .header_area .user-login-info a,
@@ -1756,3 +1756,25 @@ img {
     margin: 0 10px;
     border: 1px solid #ebebeb;
 }
+.account-actions .btn {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.account-actions .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+.account-actions .btn-secondary:hover {
+    background-color: #6c757d;
+    border-color: #5a6268;
+}
+.account-actions .btn-sm {
+    font-size: 10px;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+

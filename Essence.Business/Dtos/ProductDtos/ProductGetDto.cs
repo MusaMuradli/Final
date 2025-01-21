@@ -17,6 +17,7 @@ public class ProductGetDto:IDto
     public decimal Price { get; set; }
 
     public string MainImagePath { get; set; } = null!;
+    public string HoverImagePath { get; set; } = null!;
     public List<string> ImagePaths { get; set; } = [];
     public List<ProductImageDto> ProductImages { get; set; } = [];
 
