@@ -17,8 +17,7 @@
     <link rel="stylesheet" href="~/css/core-style.css">
     <link rel="stylesheet" href="style.css">
 
-</head>
-
+</head>"
 <body>
     <!-- ##### Header Area Start ##### -->
     <header class="header_area">
@@ -26,7 +25,7 @@
             <!-- Classy Menu -->
             <nav class="classy-navbar" id="essenceNav">
                 <!-- Logo -->
-                <a class="nav-brand" asp-controller="Home" asp-action="index" ><img src="~/img/core-img/logo.png" alt=""></a>
+                <a class="nav-brand" asp-controller="Home" asp-action="index"><img src="~/img/core-img/logo.png" alt=""></a>
                 <!-- Navbar Toggler -->
                 <div class="classy-navbar-toggler">
                     <span class="navbarToggler"><span></span><span></span><span></span></span>
@@ -145,21 +144,23 @@
                         </div>
                     }
                 </div>
-
-
-
-
-
                 <!-- Cart Area -->
                 <div class="cart-area">
-                    <a href="#" id="essenceCartBtn"><img src="~/img/core-img/bag.svg" alt=""> <span>3</span></a>
+                    <a href="#" id="essenceCartBtn"><img src="~/img/core-img/bag.svg" alt=""> <span>0</span></a>
                 </div>
             </div>
 
         </div>
     </header>
     <!-- ##### Header Area End ##### -->
-            @RenderBody()
+    <!-- ##### Right Side Cart Area ##### -->
+    <div class="cart-bg-overlay"></div>
+    <div class="basketModal">
+
+    <partial name="_basketModalPartial"></partial>
+    </div>
+    <!-- ##### Right Side Cart End ##### -->
+    @RenderBody()
     <footer class="footer_area clearfix">
         <div class="container">
             <div class="row">
@@ -249,6 +250,8 @@
     <script src="~/js/classy-nav.min.js"></script>
     <!-- Active js -->
     <script src="~/js/active.js"></script>
+
+    @await RenderSectionAsync("Scripts",false)
 
 </body>
 

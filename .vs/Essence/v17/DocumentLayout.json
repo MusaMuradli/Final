@@ -1,40 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Owner\\Desktop\\Final\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{DC98ECE7-97D3-4D88-9951-7E46C62F899A}|Essence.Presentation\\Essence.Presentation.csproj|c:\\users\\owner\\desktop\\final\\essence.presentation\\controllers\\basketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DC98ECE7-97D3-4D88-9951-7E46C62F899A}|Essence.Presentation\\Essence.Presentation.csproj|solutionrelative:essence.presentation\\controllers\\basketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7F664D41-8BE6-4B61-B58A-B007F31090DA}|Essence.Business\\Essence.Business.csproj|c:\\users\\owner\\desktop\\final\\essence.business\\dtos\\basketitemdtos\\basketgetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F664D41-8BE6-4B61-B58A-B007F31090DA}|Essence.Business\\Essence.Business.csproj|solutionrelative:essence.business\\dtos\\basketitemdtos\\basketgetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7F664D41-8BE6-4B61-B58A-B007F31090DA}|Essence.Business\\Essence.Business.csproj|c:\\users\\owner\\desktop\\final\\essence.business\\services\\abstractions\\ibasketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F664D41-8BE6-4B61-B58A-B007F31090DA}|Essence.Business\\Essence.Business.csproj|solutionrelative:essence.business\\services\\abstractions\\ibasketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7F664D41-8BE6-4B61-B58A-B007F31090DA}|Essence.Business\\Essence.Business.csproj|c:\\users\\owner\\desktop\\final\\essence.business\\services\\implementations\\basketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F664D41-8BE6-4B61-B58A-B007F31090DA}|Essence.Business\\Essence.Business.csproj|solutionrelative:essence.business\\services\\implementations\\basketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{104317CB-6FF3-47F2-BB9C-17BBFBA8CF7C}|Essence.Core\\Essence.Core.csproj|c:\\users\\owner\\desktop\\final\\essence.core\\entities\\basketitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{104317CB-6FF3-47F2-BB9C-17BBFBA8CF7C}|Essence.Core\\Essence.Core.csproj|solutionrelative:essence.core\\entities\\basketitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB7D7795-4365-4880-9220-1B9396207314}|Essence.DataAccess\\Essence.DataAccess.csproj|c:\\users\\owner\\desktop\\final\\essence.dataaccess\\repositories\\abstractions\\ibasketitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB7D7795-4365-4880-9220-1B9396207314}|Essence.DataAccess\\Essence.DataAccess.csproj|solutionrelative:essence.dataaccess\\repositories\\abstractions\\ibasketitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DB7D7795-4365-4880-9220-1B9396207314}|Essence.DataAccess\\Essence.DataAccess.csproj|c:\\users\\owner\\desktop\\final\\essence.dataaccess\\serviceregistrations\\dataaccessserviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB7D7795-4365-4880-9220-1B9396207314}|Essence.DataAccess\\Essence.DataAccess.csproj|solutionrelative:essence.dataaccess\\serviceregistrations\\dataaccessserviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DC98ECE7-97D3-4D88-9951-7E46C62F899A}|Essence.Presentation\\Essence.Presentation.csproj|c:\\users\\owner\\desktop\\final\\essence.presentation\\views\\blog\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DC98ECE7-97D3-4D88-9951-7E46C62F899A}|Essence.Presentation\\Essence.Presentation.csproj|solutionrelative:essence.presentation\\views\\blog\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -42,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -55,110 +22,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BasketGetDto.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Business\\Dtos\\BasketItemDtos\\BasketGetDto.cs",
-              "RelativeDocumentMoniker": "Essence.Business\\Dtos\\BasketItemDtos\\BasketGetDto.cs",
-              "ToolTip": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Business\\Dtos\\BasketItemDtos\\BasketGetDto.cs",
-              "RelativeToolTip": "Essence.Business\\Dtos\\BasketItemDtos\\BasketGetDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-22T10:20:43.734Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IBasketService.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Business\\Services\\Abstractions\\IBasketService.cs",
-              "RelativeDocumentMoniker": "Essence.Business\\Services\\Abstractions\\IBasketService.cs",
-              "ToolTip": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Business\\Services\\Abstractions\\IBasketService.cs",
-              "RelativeToolTip": "Essence.Business\\Services\\Abstractions\\IBasketService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-22T10:20:29.573Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BasketService.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Business\\Services\\Implementations\\BasketService.cs",
-              "RelativeDocumentMoniker": "Essence.Business\\Services\\Implementations\\BasketService.cs",
-              "ToolTip": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Business\\Services\\Implementations\\BasketService.cs",
-              "RelativeToolTip": "Essence.Business\\Services\\Implementations\\BasketService.cs",
-              "ViewState": "AgIAANEAAAAAAAAAAAAQwAsBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-22T10:20:12.773Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BasketItem.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Core\\Entities\\BasketItem.cs",
-              "RelativeDocumentMoniker": "Essence.Core\\Entities\\BasketItem.cs",
-              "ToolTip": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Core\\Entities\\BasketItem.cs",
-              "RelativeToolTip": "Essence.Core\\Entities\\BasketItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-22T10:19:54.019Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IBasketItemRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\Final\\Essence.DataAccess\\Repositories\\Abstractions\\IBasketItemRepository.cs",
-              "RelativeDocumentMoniker": "Essence.DataAccess\\Repositories\\Abstractions\\IBasketItemRepository.cs",
-              "ToolTip": "C:\\Users\\Owner\\Desktop\\Final\\Essence.DataAccess\\Repositories\\Abstractions\\IBasketItemRepository.cs",
-              "RelativeToolTip": "Essence.DataAccess\\Repositories\\Abstractions\\IBasketItemRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-22T10:19:30.303Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BasketController.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Presentation\\Controllers\\BasketController.cs",
-              "RelativeDocumentMoniker": "Essence.Presentation\\Controllers\\BasketController.cs",
-              "ToolTip": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Presentation\\Controllers\\BasketController.cs",
-              "RelativeToolTip": "Essence.Presentation\\Controllers\\BasketController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-22T09:08:41.236Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "DataAccessServiceRegistration.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\Final\\Essence.DataAccess\\ServiceRegistrations\\DataAccessServiceRegistration.cs",
-              "RelativeDocumentMoniker": "Essence.DataAccess\\ServiceRegistrations\\DataAccessServiceRegistration.cs",
-              "ToolTip": "C:\\Users\\Owner\\Desktop\\Final\\Essence.DataAccess\\ServiceRegistrations\\DataAccessServiceRegistration.cs",
-              "RelativeToolTip": "Essence.DataAccess\\ServiceRegistrations\\DataAccessServiceRegistration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-22T10:19:26.072Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Presentation\\Views\\Blog\\Index.cshtml",
-              "RelativeDocumentMoniker": "Essence.Presentation\\Views\\Blog\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Presentation\\Views\\Blog\\Index.cshtml",
-              "RelativeToolTip": "Essence.Presentation\\Views\\Blog\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-22T10:16:36.293Z",
-              "EditorCaption": ""
             }
           ]
         }

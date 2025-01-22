@@ -28,19 +28,22 @@ namespace Essence.Presentation.Areas.Admin.Controllers
         }
 
         [HttpPost]
+        [HttpPost]
         public async Task<IActionResult> Create(ProductCreateDto dto)
         {
+            // Məhsul yaradılması zamanı hər hansı səhv varsa
             var result = await _service.CreateAsync(dto, ModelState);
-
             if (!result)
             {
-                ViewData["Brands"] = await _service.GetBrandsAsync();
-                dto = await _service.GetCreatedDtoAsync(dto);
-                return View(dto);
+                // Brand və Kateqoriya məlumatlarını yenidən yükləyirik, çünki `Create` görünüşü bunları tələb edir
+                var brandAndCategories = await _service.GetBrandAndCategoriesAsync();
+                return View(brandAndCategories);
             }
 
+            // Məhsul uğurla yaradılıbsa, Index səhifəsinə yönləndir
             return RedirectToAction(nameof(Index));
         }
+
 
         public async Task<IActionResult> Details(int id)
         {

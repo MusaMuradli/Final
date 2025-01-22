@@ -1,4 +1,4 @@
-(function ($) {
+ï»¿(function ($) {
     'use strict';
 
     var $window = $(window);
@@ -151,11 +151,11 @@
 })(jQuery);
 $(document).ready(function () {
     $(".category-slider").owlCarousel({
-        items: 3, // Eyni anda neç? kateqoriya göst?ril?c?k
+        items: 3, // Eyni anda neÃ§? kateqoriya gÃ¶st?ril?c?k
         loop: true, // T?krarlama
         margin: 20, // Elementl?r aras?ndak? bo?luq
         nav: true, // Navigasiya oxlar?
-        dots: true, // Göst?ricil?r
+        dots: true, // GÃ¶st?ricil?r
         autoplay: true, // Avtomatik h?r?k?t
         autoplayTimeout: 3000, // Avtomatik h?r?k?t interval?
         responsive: {
@@ -171,3 +171,5 @@ $(document).ready(function () {
         }
     });
 });
+
+

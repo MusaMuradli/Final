@@ -21,6 +21,7 @@ namespace Essence.Business.Services.Implementations
         private readonly ICloudinaryService _cloudinaryService;
         private readonly ICategoryService _categoryService;
         private readonly IBrandService _brandService;
+        private static readonly List<string> AllowedSizes = new() { "XS", "S", "M", "L", "XL", "XXL", "XXXL" };
 
         public ProductService(IProductRepository productRepository, IMapper mapper, ICloudinaryService cloudinaryService, ICategoryService categoryService, IBrandService brandService)
         {
@@ -35,74 +36,70 @@ namespace Essence.Business.Services.Implementations
             if (!ModelState.IsValid)
                 return false;
 
+            // Kateqoriya və Brend yoxlanışı
             var isExistCategory = await _categoryService.IsExistAsync(dto.CategoryId);
-
             if (!isExistCategory)
             {
-                ModelState.AddModelError("CategoryId", "Belə Kateqoriya mövcud deyil zəhmət olmasa yenidən daxil edin");
+                ModelState.AddModelError("CategoryId", "Belə Kateqoriya mövcud deyil, zəhmət olmasa yenidən daxil edin.");
                 return false;
             }
 
             var isExistBrand = await _brandService.IsExistAsync(dto.BrandId);
-
             if (!isExistBrand)
             {
-                ModelState.AddModelError("BrandId", "Belə Brend mövcud deyil zəhmət olmasa yenidən daxil edin");
+                ModelState.AddModelError("BrandId", "Belə Brend mövcud deyil, zəhmət olmasa yenidən daxil edin.");
                 return false;
             }
 
-            if (dto.ProductSizes.Count == 0)
+            // Ölçülərin unikal olub-olmadığını yoxla
+            if (dto.ProductSizes.GroupBy(size => size.Size).Any(group => group.Count() > 1))
             {
-                ModelState.AddModelError("ProductSizes", "Minimum 1 ölçü daxil etməlisiniz");
+                ModelState.AddModelError("ProductSizes", "Eyni ölçü bir dəfədən artıq daxil edilə bilməz.");
                 return false;
-            }
-            if (!dto.MainImage.ValidateType())
-            {
-                ModelState.AddModelError("MainImage", "Yalnız şəkil formatında dəyər daxil edə bilərsiniz");
-                return false;
-            }
-            if (!dto.MainImage.ValidateSize(2))
-            {
-                ModelState.AddModelError("MainImage", "Şəkilin ölçüsü 2 mb dan artıq ola bilməz");
-                return false;
-            }
-            foreach (var formFile in dto.ProductImages)
-            {
-                if (!formFile.ValidateType())
-                {
-                    ModelState.AddModelError("Images", "Yalnız şəkil formatında dəyər daxil edə bilərsiniz");
-                    return false;
-                }
-
-                if (!formFile.ValidateSize(2))
-                {
-                    ModelState.AddModelError("Images", "Şəkilin ölçüsü 2 mb dan artıq ola bilməz");
-                    return false;
-                }
             }
 
+            // Ölçülərin ümumi miqdarını yoxla
+            int totalSizeCount = dto.ProductSizes.Sum(size => size.Count);
+            if (totalSizeCount > dto.Count)
+            {
+                ModelState.AddModelError("ProductSizes", $"Məhsul ölçülərinin ümumi miqdarı ({totalSizeCount}) ümumi məhsul sayından ({dto.Count}) çox ola bilməz.");
+                return false;
+            }
+
+            // Ölçü adlarını yoxla
+            if (dto.ProductSizes.Any(size => !AllowedSizes.Contains(size.Size)))
+            {
+                ModelState.AddModelError("ProductSizes", "Yalnız XS, S, M, L, XL, XXL, XXXL ölçüləri qəbul edilir.");
+                return false;
+            }
+
+            // Məhsul yaradılması
             var product = _mapper.Map<Product>(dto);
 
+            // Şəkilləri əlavə et
             product.ProductImages = new List<ProductImage>();
-
             string mainImagePath = await _cloudinaryService.FileCreateAsync(dto.MainImage);
             ProductImage mainImage = new() { Path = mainImagePath, IsMain = true };
             product.ProductImages.Add(mainImage);
 
-
             string hoverImagePath = await _cloudinaryService.FileCreateAsync(dto.Hover);
             ProductImage hoverImage = new() { Path = hoverImagePath, IsHover = true };
             product.ProductImages.Add(hoverImage);
+
             foreach (var file in dto.ProductImages)
             {
                 string imagePath = await _cloudinaryService.FileCreateAsync(file);
                 ProductImage image = new() { Path = imagePath };
                 product.ProductImages.Add(image);
             }
+
             await _productRepository.CreateAsync(product);
             await _productRepository.SaveChangesAsync();
+
             return true;
         }
+
+
 
         public async Task DeleteAsync(int id)
         {
@@ -133,15 +130,7 @@ namespace Essence.Business.Services.Implementations
             return _mapper.Map<ProductGetDto>(product);
         }
 
-        public Task<ProductCreateDto> GetCreatedDtoAsync()
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<ProductCreateDto> GetCreatedDtoAsync(ProductCreateDto dto)
-        {
-            throw new NotImplementedException();
-        }
+    
 
         public Task<ProductUpdateDto> GetUpdatedDtoAsync(ProductUpdateDto dto)
         {

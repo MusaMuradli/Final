@@ -155,12 +155,31 @@ internal class BasketService : IBasketService
         {
             var userId = _getUserId();
 
-            var basketItems = await _repository.GetFilter(x => x.AppUserId == userId,
-                           x => x.Include(x => x.ProductSize).ThenInclude(x => x.Product)
-                                      .Include(x => x.ProductSize.Product.Category)
-                                      .Include(x => x.ProductSize.Product.ProductImages)).ToListAsync();
+            var basketItems = await _repository.GetFilter(
+                x => x.AppUserId == userId,
+                x => x.Include(x => x.ProductSize)
+                      .ThenInclude(x => x.Product)
+                      .Include(x => x.ProductSize.Product.Category)
+                      .Include(x => x.ProductSize.Product.Brand)
+                      .Include(x => x.ProductSize.Product.ProductImages)
+            ).ToListAsync();
 
             var dtos = _mapper.Map<List<BasketItemGetDto>>(basketItems);
+
+           
+            var validDtos = new List<BasketItemGetDto>();
+
+            foreach (var dto in dtos)
+            {
+                var productSize = await _productSizeService.GetAsync(dto.ProductSizeId);
+
+                if (productSize != null)
+                {
+                    dto.ProductSize = productSize;
+                    validDtos.Add(dto); 
+                }
+            }
+            dtos = validDtos;
 
             decimal totalPrice = dtos.Sum(x => (x.Count * x.ProductSize.Price));
             var basketDto = new BasketGetDto()
@@ -177,21 +196,22 @@ internal class BasketService : IBasketService
         else
         {
             var basketItems = _readBasketFromCookie();
-
             var dtos = _mapper.Map<List<BasketItemGetDto>>(basketItems);
+
+            var validDtos = new List<BasketItemGetDto>();
 
             foreach (var dto in dtos)
             {
                 var productSize = await _productSizeService.GetAsync(dto.ProductSizeId);
 
-                if (productSize is null)
+                if (productSize != null)
                 {
-                    dtos.Remove(dto);
-                    continue;
+                    dto.ProductSize = productSize;
+                    validDtos.Add(dto);
                 }
-
-                dto.ProductSize = productSize;
             }
+
+            dtos = validDtos;
 
             decimal totalPrice = dtos.Sum(x => (x.Count * x.ProductSize.Price));
             var basketDto = new BasketGetDto()
@@ -205,8 +225,8 @@ internal class BasketService : IBasketService
 
             return basketDto;
         }
-
     }
+
 
     public async Task RemoveToBasketAsync(int id)
     {

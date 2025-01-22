@@ -13,6 +13,7 @@ namespace Essence.Presentation.Controllers
             _service = service;
         }
 
+
         public async Task<IActionResult> Index()
         {
             var result = await _service.GetBasketAsync();
@@ -21,8 +22,10 @@ namespace Essence.Presentation.Controllers
         public async Task<IActionResult> GetBasketSection()
         {
             var basket = await _service.GetBasketAsync();
-            return PartialView("_basketSectionPartial", basket);
+            return PartialView("_BasketItemsPartial", basket);
         }
+
+
         public async Task<IActionResult> RemoveToBasket(int id)
         {
             await _service.RemoveToBasketAsync(id);
@@ -35,9 +38,9 @@ namespace Essence.Presentation.Controllers
         public async Task<IActionResult> AddToBasket(int id, int count = 1)
         {
             await _service.AddToBasketAsync(id, count);
-
-            return RedirectToAction(nameof(RedirectForBasket));
+            return PartialView("_basketModalPartial");
         }
+
         public IActionResult RedirectForBasket()
         {
             return PartialView("_basketModalPartial");
