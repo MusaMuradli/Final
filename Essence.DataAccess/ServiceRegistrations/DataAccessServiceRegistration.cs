@@ -31,6 +31,8 @@ public static class DataAccessLayerServiceRegistration
         services.AddScoped<IProductRepository, ProductRepository>();
         services.AddScoped<ICategoryRepository, CategoryRepository>();
         services.AddScoped<IBrandRepository, BrandRepository>();
+        services.AddScoped<IProductSizeRepository, ProductSizeRepository>();
+        services.AddScoped<IBasketItemRepository, BasketItemRepository>();
 
     }
     private static void _addIdentity(IServiceCollection services)

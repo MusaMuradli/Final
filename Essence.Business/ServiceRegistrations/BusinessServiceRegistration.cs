@@ -33,6 +33,8 @@ public static class BusinessServiceRegistration
         services.AddScoped<IAuthService, AuthService>();
         services.AddScoped<IEmailService, EmailService>();
         services.AddScoped<IHomeService, HomeService>();
+        services.AddScoped<IProductSizeService, ProductSizeService>();
+        services.AddScoped<IBasketService, BasketService>();
 
 
 

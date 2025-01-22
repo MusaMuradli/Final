@@ -3,24 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Owner\\Desktop\\Final\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{DB7D7795-4365-4880-9220-1B9396207314}|Essence.DataAccess\\Essence.DataAccess.csproj|c:\\users\\owner\\desktop\\final\\essence.dataaccess\\serviceregistrations\\dataaccessserviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB7D7795-4365-4880-9220-1B9396207314}|Essence.DataAccess\\Essence.DataAccess.csproj|solutionrelative:essence.dataaccess\\serviceregistrations\\dataaccessserviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F664D41-8BE6-4B61-B58A-B007F31090DA}|Essence.Business\\Essence.Business.csproj|c:\\users\\owner\\desktop\\final\\essence.business\\serviceregistrations\\businessserviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F664D41-8BE6-4B61-B58A-B007F31090DA}|Essence.Business\\Essence.Business.csproj|solutionrelative:essence.business\\serviceregistrations\\businessserviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DC98ECE7-97D3-4D88-9951-7E46C62F899A}|Essence.Presentation\\Essence.Presentation.csproj|c:\\users\\owner\\desktop\\final\\essence.presentation\\views\\blog\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DC98ECE7-97D3-4D88-9951-7E46C62F899A}|Essence.Presentation\\Essence.Presentation.csproj|solutionrelative:essence.presentation\\views\\blog\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC98ECE7-97D3-4D88-9951-7E46C62F899A}|Essence.Presentation\\Essence.Presentation.csproj|c:\\users\\owner\\desktop\\final\\essence.presentation\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DC98ECE7-97D3-4D88-9951-7E46C62F899A}|Essence.Presentation\\Essence.Presentation.csproj|solutionrelative:essence.presentation\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{DC98ECE7-97D3-4D88-9951-7E46C62F899A}|Essence.Presentation\\Essence.Presentation.csproj|c:\\users\\owner\\desktop\\final\\essence.presentation\\controllers\\basketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC98ECE7-97D3-4D88-9951-7E46C62F899A}|Essence.Presentation\\Essence.Presentation.csproj|solutionrelative:essence.presentation\\controllers\\basketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC98ECE7-97D3-4D88-9951-7E46C62F899A}|Essence.Presentation\\Essence.Presentation.csproj|c:\\users\\owner\\desktop\\final\\essence.presentation\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DC98ECE7-97D3-4D88-9951-7E46C62F899A}|Essence.Presentation\\Essence.Presentation.csproj|solutionrelative:essence.presentation\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{7F664D41-8BE6-4B61-B58A-B007F31090DA}|Essence.Business\\Essence.Business.csproj|c:\\users\\owner\\desktop\\final\\essence.business\\services\\implementations\\basketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F664D41-8BE6-4B61-B58A-B007F31090DA}|Essence.Business\\Essence.Business.csproj|solutionrelative:essence.business\\services\\implementations\\basketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC98ECE7-97D3-4D88-9951-7E46C62F899A}|Essence.Presentation\\Essence.Presentation.csproj|c:\\users\\owner\\desktop\\final\\essence.presentation\\controllers\\blogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DC98ECE7-97D3-4D88-9951-7E46C62F899A}|Essence.Presentation\\Essence.Presentation.csproj|solutionrelative:essence.presentation\\controllers\\blogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7F664D41-8BE6-4B61-B58A-B007F31090DA}|Essence.Business\\Essence.Business.csproj|c:\\users\\owner\\desktop\\final\\essence.business\\services\\abstractions\\ibasketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F664D41-8BE6-4B61-B58A-B007F31090DA}|Essence.Business\\Essence.Business.csproj|solutionrelative:essence.business\\services\\abstractions\\ibasketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC98ECE7-97D3-4D88-9951-7E46C62F899A}|Essence.Presentation\\Essence.Presentation.csproj|c:\\users\\owner\\desktop\\final\\essence.presentation\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DC98ECE7-97D3-4D88-9951-7E46C62F899A}|Essence.Presentation\\Essence.Presentation.csproj|solutionrelative:essence.presentation\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7F664D41-8BE6-4B61-B58A-B007F31090DA}|Essence.Business\\Essence.Business.csproj|c:\\users\\owner\\desktop\\final\\essence.business\\dtos\\productsizedtos\\productsizerelationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F664D41-8BE6-4B61-B58A-B007F31090DA}|Essence.Business\\Essence.Business.csproj|solutionrelative:essence.business\\dtos\\productsizedtos\\productsizerelationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,67 +54,93 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Presentation\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Essence.Presentation\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Presentation\\Views\\Shared\\_Layout.cshtml*",
-              "RelativeToolTip": "Essence.Presentation\\Views\\Shared\\_Layout.cshtml*",
-              "ViewState": "AgIAAEEAAAAAAAAAAAApwFQAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-22T08:35:06.259Z",
+              "DocumentIndex": 0,
+              "Title": "DataAccessServiceRegistration.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\Final\\Essence.DataAccess\\ServiceRegistrations\\DataAccessServiceRegistration.cs",
+              "RelativeDocumentMoniker": "Essence.DataAccess\\ServiceRegistrations\\DataAccessServiceRegistration.cs",
+              "ToolTip": "C:\\Users\\Owner\\Desktop\\Final\\Essence.DataAccess\\ServiceRegistrations\\DataAccessServiceRegistration.cs",
+              "RelativeToolTip": "Essence.DataAccess\\ServiceRegistrations\\DataAccessServiceRegistration.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwCMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-22T10:15:07.907Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Presentation\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Essence.Presentation\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Presentation\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Essence.Presentation\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEgAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-22T08:34:37.063Z",
+              "Title": "BusinessServiceRegistration.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Business\\ServiceRegistrations\\BusinessServiceRegistration.cs",
+              "RelativeDocumentMoniker": "Essence.Business\\ServiceRegistrations\\BusinessServiceRegistration.cs",
+              "ToolTip": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Business\\ServiceRegistrations\\BusinessServiceRegistration.cs",
+              "RelativeToolTip": "Essence.Business\\ServiceRegistrations\\BusinessServiceRegistration.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwCUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-22T10:13:27.293Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Presentation\\Views\\Blog\\Index.cshtml",
               "RelativeDocumentMoniker": "Essence.Presentation\\Views\\Blog\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Presentation\\Views\\Blog\\Index.cshtml*",
-              "RelativeToolTip": "Essence.Presentation\\Views\\Blog\\Index.cshtml*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAjAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Presentation\\Views\\Blog\\Index.cshtml",
+              "RelativeToolTip": "Essence.Presentation\\Views\\Blog\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-22T08:33:43.786Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BlogController.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Presentation\\Controllers\\BlogController.cs",
-              "RelativeDocumentMoniker": "Essence.Presentation\\Controllers\\BlogController.cs",
-              "ToolTip": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Presentation\\Controllers\\BlogController.cs",
-              "RelativeToolTip": "Essence.Presentation\\Controllers\\BlogController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-22T08:33:30.327Z",
+              "WhenOpened": "2025-01-22T10:07:32.007Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Presentation\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Essence.Presentation\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Presentation\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Essence.Presentation\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAsAAAAAAAAAA==",
+              "Title": "BasketService.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Business\\Services\\Implementations\\BasketService.cs",
+              "RelativeDocumentMoniker": "Essence.Business\\Services\\Implementations\\BasketService.cs",
+              "ToolTip": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Business\\Services\\Implementations\\BasketService.cs",
+              "RelativeToolTip": "Essence.Business\\Services\\Implementations\\BasketService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAgwFMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-22T08:33:08.238Z",
+              "WhenOpened": "2025-01-22T09:12:40.926Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProductSizeRelationDto.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Business\\Dtos\\ProductSizeDtos\\ProductSizeRelationDto.cs",
+              "RelativeDocumentMoniker": "Essence.Business\\Dtos\\ProductSizeDtos\\ProductSizeRelationDto.cs",
+              "ToolTip": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Business\\Dtos\\ProductSizeDtos\\ProductSizeRelationDto.cs",
+              "RelativeToolTip": "Essence.Business\\Dtos\\ProductSizeDtos\\ProductSizeRelationDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-22T09:11:29.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IBasketService.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Business\\Services\\Abstractions\\IBasketService.cs",
+              "RelativeDocumentMoniker": "Essence.Business\\Services\\Abstractions\\IBasketService.cs",
+              "ToolTip": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Business\\Services\\Abstractions\\IBasketService.cs",
+              "RelativeToolTip": "Essence.Business\\Services\\Abstractions\\IBasketService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-22T09:09:13.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BasketController.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Presentation\\Controllers\\BasketController.cs",
+              "RelativeDocumentMoniker": "Essence.Presentation\\Controllers\\BasketController.cs",
+              "ToolTip": "C:\\Users\\Owner\\Desktop\\Final\\Essence.Presentation\\Controllers\\BasketController.cs",
+              "RelativeToolTip": "Essence.Presentation\\Controllers\\BasketController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-22T09:08:41.236Z",
               "EditorCaption": ""
             }
           ]
