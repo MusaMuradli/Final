@@ -8,6 +8,7 @@ using Essence.DataAccess.Repositories.Abstractions;
 using Essence.DataAccess.Repositories.Implementations;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.DependencyInjection;
+using Essence.DataAccess.DataInitializers;
 
 namespace Essence.DataAccess.ServiceRegistrations;
 
@@ -17,6 +18,7 @@ public static class DataAccessLayerServiceRegistration
     {
         services.AddDbContext<AppDbContext>(options => options.UseSqlServer(configuration.GetConnectionString("Default")));
         services.AddScoped<BaseEntityInterceptor>();
+        services.AddScoped<DbContextInitalizer>();
 
         _addRepositories(services);
         _addIdentity(services);

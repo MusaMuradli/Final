@@ -513,3 +513,4 @@ C:\Users\Owner\Desktop\Final\Essence.Presentation\obj\Debug\net8.0\refint\Essenc
 C:\Users\Owner\Desktop\Final\Essence.Presentation\obj\Debug\net8.0\Essence.Presentation.pdb
 C:\Users\Owner\Desktop\Final\Essence.Presentation\obj\Debug\net8.0\Essence.Presentation.genruntimeconfig.cache
 C:\Users\Owner\Desktop\Final\Essence.Presentation\obj\Debug\net8.0\ref\Essence.Presentation.dll
+C:\Users\Owner\Desktop\Final\Essence.Presentation\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Binder.dll

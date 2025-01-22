@@ -6,8 +6,10 @@ using Essence.Business.Services.Abstractions;
 using Essence.Core.Entities;
 using Essence.Core.Enum;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http.Extensions;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.AspNetCore.Mvc.Routing;
 using Microsoft.EntityFrameworkCore;
@@ -21,17 +23,19 @@ internal class AuthService : IAuthService
     private readonly IHttpContextAccessor _contextAccessor;
     private readonly IMapper _mapper;
     private readonly IEmailService _emailService;
+    private readonly IUrlHelper _urlHelper;
 
     public AuthService(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, 
         IHttpContextAccessor contextAccessor, 
         IMapper mapper,
-        IEmailService emailService)
+        IEmailService emailService, IUrlHelperFactory urlHelperFactory, IActionContextAccessor actionContextAccessor)
     {
         _userManager = userManager;
         _signInManager = signInManager;
         _contextAccessor = contextAccessor;
         _mapper = mapper;
         _emailService = emailService;
+        _urlHelper = urlHelperFactory.GetUrlHelper(actionContextAccessor.ActionContext ?? new());
     }
     public async Task<bool> LoginAsync(LoginDto dto, ModelStateDictionary ModelState)
     {
@@ -200,6 +204,126 @@ internal class AuthService : IAuthService
 
     private async Task _sendConfirmEmailToken(AppUser user)
     {
-        throw new NotImplementedException();
+        string confirmEmailToken = await _userManager.GenerateEmailConfirmationTokenAsync(user);
+
+        UrlActionContext context = new()
+        {
+            Action = "VerifyEmail",
+            Controller = "Account",
+            Values = new { token = confirmEmailToken, email = user.Email },
+            Protocol = _contextAccessor.HttpContext?.Request.Scheme
+        };
+
+        var link = _urlHelper.Action(context);
+
+
+        string emailBody = _getTemplateContent(link ?? "");
+
+
+        EmailSendDto emailSendDto = new()
+        {
+            Body = emailBody,
+            Subject = "Email Təsdiqləmə",
+            ToEmail = user.Email ?? "undifined@undifined.com"
+        };
+
+        await _emailService.SendEmailAsync(emailSendDto);
+    }
+    private string _getTemplateContent(string url)
+    {
+
+        string result = $@"
+<!DOCTYPE html>
+<html lang=""az"">
+<head>
+    <meta charset=""UTF-8"">
+    <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+    <title>Email Təsdiqləmə</title>
+    <style>
+        body {{
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            font-family: Arial, sans-serif;
+            color: #000000;
+        }}
+        .email-container {{
+            max-width: 600px;
+            margin: 20px auto;
+            border: 2px solid #000000;
+            padding: 20px;
+            border-radius: 0;
+            background-color: #ffffff;
+            text-align: center;
+        }}
+        .email-header {{
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }}
+        .email-body {{
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 30px;
+        }}
+        .email-button {{
+            display: inline-block;
+            text-decoration: none;
+            background-color: #000000;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: 2px solid #000000;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }}
+        .email-footer {{
+            font-size: 12px;
+            color: #555555;
+            margin-top: 20px;
+        }}
+        hr {{
+            margin: 30px 0;
+            border: none;
+            border-top: 1px solid #000;
+        }}
+    </style>
+</head>
+<body>
+    <div class=""email-container"">
+        <!-- Azərbaycan Dili -->
+        <div class=""email-header"">Email Təsdiqləmə</div>
+        <div class=""email-body"">
+            Qeydiyyatdan keçdiyiniz üçün təşəkkür edirik! Hesabınızı aktivləşdirmək üçün e-mail ünvanınızı təsdiqləyin.
+        </div>
+        <a href=""{url}"" class=""email-button"">E-maili Təsdiqlə</a>
+        <div class=""email-footer"">
+            Əgər bu hesabı siz yaratmamısınızsa, zəhmət olmasa, bu e-maili nəzərə almayın.
+        </div>
+        <hr>
+        <!-- İngilis Dili -->
+        <div class=""email-header"">Email Confirmation</div>
+        <div class=""email-body"">
+            Thank you for signing up! Please confirm your email address to activate your account.
+        </div>
+        <a href=""{url}"" class=""email-button"">Confirm Email</a>
+        <div class=""email-footer"">
+            If you didn’t create this account, please ignore this email.
+        </div>
+        <hr>
+        <!-- Rus Dili -->
+        <div class=""email-header"">Подтверждение Email</div>
+        <div class=""email-body"">
+            Спасибо за регистрацию! Пожалуйста, подтвердите свой адрес электронной почты, чтобы активировать ваш аккаунт.
+        </div>
+        <a href=""{url}"" class=""email-button"">Подтвердить Email</a>
+        <div class=""email-footer"">
+            Если вы не создавали эту учетную запись, просто проигнорируйте это письмо.
+        </div>
+    </div>
+</body>
+</html>";
+        return result;
     }
 }

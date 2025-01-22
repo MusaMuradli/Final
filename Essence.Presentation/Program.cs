@@ -1,19 +1,22 @@
 ﻿using EduHome.Business.ServiceRegistrations;
 using Essence.DataAccess.ServiceRegistrations;
+using Essence.Presentation.Extensions;
 using Microsoft.Data.SqlClient;
 namespace Essence.Presentation;
 public class Program
 {
-    public static void Main(string[] args)
+    public async static Task Main(string[] args)
     {
         var builder = WebApplication.CreateBuilder(args);
 
-        // Xidmətlərin qeydiyyatı
+        
         builder.Services.AddDataAccessServices(builder.Configuration);
         builder.Services.AddControllersWithViews();
         builder.Services.AddBusinessServices();
 
         var app = builder.Build();
+
+        await app.InitDatabaseAsync();
 
         if (!app.Environment.IsDevelopment())
         {
@@ -35,7 +38,7 @@ public class Program
             name: "default",
             pattern: "{controller=Home}/{action=Index}/{id?}");
 
-        app.Run();
+        await app.RunAsync();
     }
 
 }
