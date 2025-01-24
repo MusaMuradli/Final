@@ -18,8 +18,8 @@ namespace Essence.Presentation.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var products = await _productService.GetProductsAsync();
-            return View(products);
+            var homeDto = await _homeService.GetHomeDtoAsync(); 
+            return View(homeDto); 
         }
 
         public async Task<IActionResult> ProductView()

@@ -1,10 +1,9 @@
-﻿@using Essence.Business.Dtos.ProductDtos
-@using Essence.Business.Services.Abstractions
-@{
+﻿@using Essence.Business.Dtos.UIDtos
+@model HomeDto
 
+@{
     ViewData["Title"] = "Home Page";
 }
-@model List<ProductGetDto>
 
 <!-- ##### Welcome Area Start ##### -->
 <section class="welcome_area bg-img background-overlay" style="background-image: url(img/bg-img/bg-1.jpg);">
@@ -21,50 +20,76 @@
     </div>
 </section>
 <!-- ##### Welcome Area End ##### -->
-<!-- ##### Top Catagory Area Start ##### -->
+<!-- ##### Top Category Area Start ##### -->
 <div class="top_catagory_area section-padding-80 clearfix">
     <div class="container">
         <div class="row">
             <div class="col-12">
                 <div class="owl-carousel category-slider">
-                    <!-- Single Catagory -->
-                    <div class="single_catagory_area d-flex align-items-center justify-content-center bg-img" style="background-image: url(img/bg-img/bg-2.jpg);">
-                        <div class="catagory-content">
-                            <a href="#">Clothing</a>
+                    @foreach (var category in Model.Categories)
+                    {
+                        <div class="single_catagory_area d-flex align-items-center justify-content-center bg-img" style="background-image: url(@category.ImagePath);">
+                            <div class="catagory-content">
+                                <a href="#">@category.Name</a>
+                            </div>
                         </div>
-                    </div>
-                    <!-- Single Catagory -->
-                    <div class="single_catagory_area d-flex align-items-center justify-content-center bg-img" style="background-image: url(img/bg-img/bg-3.jpg);">
-                        <div class="catagory-content">
-                            <a href="#">Shoes</a>
-                        </div>
-                    </div>
-                    <!-- Single Catagory -->
-                    <div class="single_catagory_area d-flex align-items-center justify-content-center bg-img" style="background-image: url(img/bg-img/bg-4.jpg);">
-                        <div class="catagory-content">
-                            <a href="#">Accessories</a>
-                        </div>
-                    </div>
-                    <!-- Single Catagory -->
-                    <div class="single_catagory_area d-flex align-items-center justify-content-center bg-img" style="background-image: url(img/bg-img/bg-4.jpg);">
-                        <div class="catagory-content">
-                            <a href="#">Rizvan</a>
-                        </div>
-                    </div>
-                    <!-- Single Catagory -->
-                    <div class="single_catagory_area d-flex align-items-center justify-content-center bg-img" style="background-image: url(img/bg-img/bg-4.jpg);">
-                        <div class="catagory-content">
-                            <a href="#">Aqil</a>
-                        </div>
-                    </div>
-                    <!-- Daha çox kateqoriyalar -->
+                    }
                 </div>
             </div>
         </div>
     </div>
 </div>
+<!-- ##### Top Category Area End ##### -->
+<!-- ##### New Arrivals Area Start ##### -->
+<section class="new_arrivals_area section-padding-80 clearfix">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-heading text-center">
+                    <h2>Sales Products</h2>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<!-- ##### Top Catagory Area End ##### -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="popular-products-slides owl-carousel">
+                    @foreach (var product in Model.Products)
+                    {
+                        <div class="single-product-wrapper">
+                            <div class="product-img">
+                                <img src="@product.MainImagePath" alt="">
+                                <img class="hover-img" src="@product.HoverImagePath" alt="">
+                                <div class="product-favourite">
+                                    <a href="#" class="favme fa fa-heart"></a>
+                                </div>
+                            </div>
+                            <!-- Product Description -->
+                            <div class="product-description">
+                                <span>@product.BrandName</span>
+                                <a href="single-product-details.html">
+                                    <h6>@product.Name</h6>
+                                </a>
+                                <p class="product-price">@product.Price AZN</p>
+
+                                <!-- Hover Content -->
+                                <div class="hover-content">
+                                    <!-- Add to Cart -->
+                                    <div class="add-to-cart-btn">
+                                        <a asp-controller="Basket" asp-action="AddToBasket" asp-route-id="@product.ProductSizes.FirstOrDefault()?.Id" class="btn essence-btn addToBasketBtn">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ##### New Arrivals Area End ##### -->
 <!-- ##### CTA Area Start ##### -->
 <div class="cta-area">
     <div class="container">
@@ -101,7 +126,7 @@
             <div class="col-12">
                 <div class="popular-products-slides owl-carousel">
 
-                    @foreach (var item in Model)
+                    @foreach (var item in Model.Products)
                     {
                         <div class="single-product-wrapper">
                             <div class="product-img">
@@ -123,7 +148,7 @@
                                 <div class="hover-content">
                                     <!-- Add to Cart -->
                                     <div class="add-to-cart-btn">
-                                        <a asp-controller="Basket" asp-action="AddToBasket" asp-route-id="@item.Id" class="btn essence-btn addToBasketBtn">Add to Cart</a>
+                                        <a asp-controller="Basket" asp-action="AddToBasket" asp-route-id="@item.ProductSizes.FirstOrDefault()?.Id" class="btn essence-btn addToBasketBtn">Add to Cart</a>
 
                                     </div>
 
@@ -139,32 +164,15 @@
 <!-- ##### New Arrivals Area End ##### -->
 <!-- ##### Brands Area Start ##### -->
 <div class="brands-area d-flex align-items-center justify-content-between">
-    <!-- Brand Logo -->
-    <div class="single-brands-logo">
-        <img src="~/img/core-img/brand1.png" alt="">
-    </div>
-    <!-- Brand Logo -->
-    <div class="single-brands-logo">
-        <img src="~/img/core-img/brand2.png" alt="">
-    </div>
-    <!-- Brand Logo -->
-    <div class="single-brands-logo">
-        <img src="~/img/core-img/brand3.png" alt="">
-    </div>
-    <!-- Brand Logo -->
-    <div class="single-brands-logo">
-        <img src="~/img/core-img/brand4.png" alt="">
-    </div>
-    <!-- Brand Logo -->
-    <div class="single-brands-logo">
-        <img src="~/img/core-img/brand5.png" alt="">
-    </div>
-    <!-- Brand Logo -->
-    <div class="single-brands-logo">
-        <img src="~/img/core-img/brand6.png" alt="">
-    </div>
+    @foreach (var brand in Model.Brands)
+    {
+        <div class="single-brands-logo">
+            <img src="@brand.ImagePath" alt="@brand.Name">
+        </div>
+    }
 </div>
 <!-- ##### Brands Area End ##### -->
+
 <!-- Owl Carousel CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />

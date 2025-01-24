@@ -155,10 +155,11 @@
     <!-- ##### Header Area End ##### -->
     <!-- ##### Right Side Cart Area ##### -->
     <div class="cart-bg-overlay"></div>
-    <div class="basketModal">
 
-    <partial name="_basketModalPartial"></partial>
+    <div class="basketModal right-side-cart-area">
+        <partial name="_basketModalPartial"></partial>
     </div>
+
     <!-- ##### Right Side Cart End ##### -->
     @RenderBody()
     <footer class="footer_area clearfix">
@@ -251,7 +252,7 @@
     <!-- Active js -->
     <script src="~/js/active.js"></script>
 
-    @await RenderSectionAsync("Scripts",false)
+    @await RenderSectionAsync("Scripts", false)
 
 </body>
 

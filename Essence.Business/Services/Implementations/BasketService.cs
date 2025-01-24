@@ -35,8 +35,7 @@ internal class BasketService : IBasketService
             throw new NotFoundException((nameof(NotFoundException)));
 
 
-        if (count < 1)
-            count = 1;
+        
 
         if (_checkAuthorized())
         {

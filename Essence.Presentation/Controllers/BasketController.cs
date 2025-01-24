@@ -37,7 +37,7 @@ namespace Essence.Presentation.Controllers
 
         public async Task<IActionResult> AddToBasket(int id, int count = 1)
         {
-            await _service.AddToBasketAsync(id, count);
+                await _service.AddToBasketAsync(id, count);
             return PartialView("_basketModalPartial");
         }
 

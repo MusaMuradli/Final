@@ -1,0 +1,68 @@
+﻿@using Essence.Business.Dtos.CategoryDtos
+
+@model List<CategoryGetDto>
+<div class="col-12">
+    <div class="bg-secondary rounded h-100 p-4">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h2 class="text-white">Product List</h2>
+            <a class="btn btn-primary" asp-controller="category" asp-action="Create">Create New Category</a>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Image</th>
+                        <th scope="col">Products</th>
+                        <th scope="col">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var category in Model)
+                    {
+                        <tr>
+                            <td>@category.Id</td>
+                            <td>@category.Name</td>
+                            <td>
+                                <img src="@category.ImagePath"
+                                     alt="@category.Name"
+                                     class="img-thumbnail"
+                                     style="max-width: 100px; max-height: 100px;" />
+                            </td>
+                            <td>
+                                @if (category.Products != null && category.Products.Count > 0)
+                                {
+                                    <div style="max-height: 150px; overflow-y: auto; border: 1px solid #ddd; padding: 5px;">
+                                        <ul class="list-unstyled">
+                                            @foreach (var product in category.Products.Select((value, index) => new { value, index }))
+                                            {
+                                                var bgColor = product.index % 2 == 0 ? "#f9f9f9" : "#ffffff"; // Alternativ rənglər
+                                                <li style="padding: 10px; border-bottom: 1px solid #ccc; margin-bottom: 5px; background-color: @bgColor;">
+                                                    <strong>Name:</strong> @product.value.Name <br />
+                                                    <strong>Price:</strong> @product.value.Price AZN <br />
+                                                    <strong>Size:</strong> @product.value.Size <br />
+                                                    <strong>Brand:</strong> @product.value.BrandName
+                                                </li>
+                                            }
+                                        </ul>
+                                    </div>
+                                }
+                                else
+                                {
+                                    <span>No products available</span>
+                                }
+                            </td>
+                            <td>
+                                <a class="btn btn-primary btn-sm" asp-controller="Product" asp-action="Details" asp-route-id="@category.Id">Details</a>
+                                <a class="btn btn-warning btn-sm" asp-controller="Product" asp-action="Update" asp-route-id="@category.Id">Update</a>
+                                <a class="btn btn-danger btn-sm" asp-controller="Product" asp-action="Delete" asp-route-id="@category.Id"
+                                   onclick="return confirm('Are you sure you want to delete this product?');">Delete</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
