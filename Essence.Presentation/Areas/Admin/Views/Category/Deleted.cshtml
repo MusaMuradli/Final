@@ -1,0 +1,37 @@
+﻿@using Essence.Business.Dtos.CategoryDtos
+@model List<CategoryGetDto>
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Deleted Categories</h2>
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Image</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var category in Model)
+            {
+                <tr>
+                    <td>@category.Id</td>
+                    <td>@category.Name</td>
+                    <td>
+                        @if (!string.IsNullOrEmpty(category.ImagePath))
+                        {
+                            <img src="@category.ImagePath" alt="@category.Name" style="max-width: 100px;" />
+                        }
+                    </td>
+                    <td>
+                        <form asp-action="Restore" asp-route-id="@category.Id" method="post">
+                            <button class="btn btn-success">Restore</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

@@ -14,12 +14,16 @@ public class CategoryAutoMapperProfile : Profile
             {
                 Id = product.Id,
                 Name = product.Name,
-                Price = product.ProductSizes.Any() ? product.ProductSizes.First().Price : 0, 
-                Size = product.ProductSizes.Any() ? product.ProductSizes.First().Size : "N/A", 
+                Price = product.ProductSizes.Any() ? product.ProductSizes.First().Price : 0, // İlk ölçünün qiyməti
+                Size = product.ProductSizes.Any() ? product.ProductSizes.First().Size : "N/A", // İlk ölçü
                 BrandName = product.Brand != null ? product.Brand.Name : "No Brand",
                 MainImagePath = product.ProductImages != null && product.ProductImages.Any(img => img.IsMain)
-    ? product.ProductImages.First(img => img.IsMain).Path
-    : ""
+           ? product.ProductImages.First(img => img.IsMain).Path
+           : "",
+                CategoryName = product.Category != null ? product.Category.Name : "No Category"
             }).ToList()));
+
+        CreateMap<Category, CategoryUpdateDto>().ReverseMap();
+
     }
 }

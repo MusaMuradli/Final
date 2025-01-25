@@ -43,3 +43,25 @@ internal class ProductAutoMapper : Profile
 
     }
 }
+//CreateMap<Product, ProductGetDto>()
+//            .ForMember(dest => dest.BrandName, opt => opt.MapFrom(src => src.Brand != null ? src.Brand.Name : "No Brand"))
+//            .ForMember(dest => dest.CategoryName, opt => opt.MapFrom(src => src.Category != null ? src.Category.Name : "No Category"))
+//            .ForMember(dest => dest.MainImagePath, opt => opt.MapFrom(src => src.ProductImages.FirstOrDefault(img => img.IsMain)?.Path ?? string.Empty))
+//            .ForMember(dest => dest.HoverImagePath, opt => opt.MapFrom(src => src.ProductImages.FirstOrDefault(img => img.IsHover)?.Path ?? string.Empty))
+//            .ForMember(dest => dest.Price, opt => opt.MapFrom(src => src.ProductSizes.Any()? src.ProductSizes.First().Price : 0))
+//            .ForMember(dest => dest.ImagePaths, opt => opt.MapFrom(src => src.ProductImages.Where(img => !img.IsMain).Select(img => img.Path).ToList()));
+
+//        CreateMap<Product, ProductCreateDto>()
+//            .ForMember(dest => dest.ProductSizes, opt => opt.MapFrom(src => src.ProductSizes))
+//            .ForMember(dest => dest.ProductImages, opt => opt.Ignore()); // Şəkilləri ayrıca idarə edirik
+
+//CreateMap<ProductCreateDto, Product>()
+//            .ForMember(dest => dest.ProductSizes, opt => opt.MapFrom(src => src.ProductSizes))
+//            .ForMember(dest => dest.ProductImages, opt => opt.Ignore());
+
+//CreateMap<ProductImage, ProductImageDto>().ReverseMap();
+
+//CreateMap<IFormFile, ProductImage>()
+//            .ForMember(dest => dest.Path, opt => opt.Ignore())
+//            .ForMember(dest => dest.IsMain, opt => opt.Ignore())
+//            .ForMember(dest => dest.IsHover, opt => opt.Ignore());

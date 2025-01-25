@@ -73,30 +73,45 @@ internal class CategoryService : ICategoryService
 
     public async Task DeleteAsync(int id)
     {
-        var category = await _repository.GetAsync(id);
+        var category = await _repository.GetAsync(id, query => query.Include(c => c.Products));
 
         if (category == null)
             throw new NotFoundException("Kateqoriya tapılmadı.");
 
-        if (!string.IsNullOrEmpty(category.ImagePath))
-            await _cloudinaryService.FileDeleteAsync(category.ImagePath);
+        // Kateqoriyanı "sil" (IsDeleted = true)
+        category.IsDeleted = true;
 
-        _repository.Delete(category);
+        // Məhsulları "No Category" kimi təyin etmək
+        if (category.Products != null && category.Products.Any())
+        {
+            foreach (var product in category.Products)
+            {
+                product.CategoryId = null; // Məhsul kateqoriyasını null edir
+            }
+        }
+
+        _repository.Update(category);
         await _repository.SaveChangesAsync();
     }
+
+
+
+
 
     public async Task<List<CategoryGetDto>> GetAllCategories()
     {
         var categories = await _repository.GetAll(query => query
-     .Include(c => c.Products)
-     .ThenInclude(p => p.ProductSizes) 
-     .Include(c => c.Products)
-     .ThenInclude(p => p.Brand))
-     .ToListAsync();
+            .Where(c => !c.IsDeleted) 
+            .Include(c => c.Products)
+            .ThenInclude(p => p.ProductSizes)
+            .Include(c => c.Products)
+            .ThenInclude(p => p.Brand))
+            .ToListAsync();
 
         var categoryDtos = _mapper.Map<List<CategoryGetDto>>(categories);
         return categoryDtos;
     }
+
 
     public async Task<CategoryCreateDto> GetCreateDtoAsync()
     {
@@ -107,6 +122,19 @@ internal class CategoryService : ICategoryService
     {
         return await Task.FromResult(dto); 
     }
+
+    public async Task<List<CategoryGetDto>> GetDeletedCategories()
+    {
+        var deletedCategories = await _repository
+            .GetAll() 
+            .Where(c => c.IsDeleted)
+            .ToListAsync();
+
+        var categoryDtos = _mapper.Map<List<CategoryGetDto>>(deletedCategories);
+        return categoryDtos;
+    }
+
+
 
     public async Task<CategoryUpdateDto> GetUpdatedDtoAsync(int id)
     {
@@ -170,3 +198,7 @@ internal class CategoryService : ICategoryService
         return true;
     }
 }
+//var deletedCategories = await _repository
+//    .GetAll(query => query.Include(c => c.Products))
+//    .Where(c => c.IsDeleted)
+//    .ToListAsync();

@@ -72,9 +72,28 @@ public class CategoryController : Controller
     }
 
     [HttpPost]
+    [ValidateAntiForgeryToken]
     public async Task<IActionResult> Delete(int id)
     {
-        await _categoryService.DeleteAsync(id);
-        return RedirectToAction(nameof(Index));
+        try
+        {
+            await _categoryService.DeleteAsync(id); // Silmə əməliyyatı
+            return RedirectToAction(nameof(Index)); // Admin panelə geri dön
+        }
+        catch (Exception ex)
+        {
+            ModelState.AddModelError("", ex.Message); // Hər hansı bir xəta baş verərsə, error əlavə et
+            return RedirectToAction(nameof(Index)); // Eyni səhifəyə geri dön
+        }
     }
+
+    [HttpGet]
+    public async Task<IActionResult> DeletedCategories()
+    {
+        var deletedCategories = await _categoryService.GetDeletedCategories();
+        return View(deletedCategories);
+    }
+
+
+
 }
